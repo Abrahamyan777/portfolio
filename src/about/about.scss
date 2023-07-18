@@ -1,4 +1,151 @@
-.aboutConteiner{
-    height: 600px;
-    background-color: blue;
+.aboutConteiner {
+    background-color: #17181c;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+
+    .aboutInner {
+        .aboutMe {
+            text-align: center;
+            padding-bottom: 40px;
+            color: white;
+
+            span {
+                color: #799ffe;
+            }
+        }
+
+        .aboutInfo {
+            width: 90%;
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            color: #ccc;
+
+            .aboutLeft {
+                width: 50%;
+                border: 1px solid white;
+                padding: 20px;
+
+                .info {
+                    .activity {
+                        p {
+                            color: #bbb;
+                            padding-top: 15px;
+                        }
+                    }
+
+                    .contact {
+                        padding: 20px 0 0 0;
+
+                        ul {
+                            list-style: none;
+
+                            li {
+                                margin-top: 15px;
+                                height: 30px;
+                                display: flex;
+
+                                span {
+                                    font-size: 16px;
+                                    line-height: 18px;
+                                }
+
+                                .title {
+                                    min-width: 95px;
+                                    display: flex;
+                                    justify-content: space-between;
+                                    color: #bbb;
+                                    font-weight: 600;
+
+                                    b {
+                                        margin-right: 10px;
+                                    }
+                                }
+
+                                .titleInfo {
+                                    color: #ccc;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .aboutRight {
+                width: 50%;
+                padding: 20px;
+                border: 1px solid white;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+
+                ul {
+                    list-style: none;
+
+                    li {
+                        padding: 0 0 20px 0;
+
+                        .skills {
+                            display: flex;
+                            justify-content: space-between;
+                        }
+
+                        .progress-bar {
+                            margin-top: 10px;
+                            width: 100%;
+                            height: 5px;
+                            border: 1px solid #ccc;
+                            border-radius: 20px;
+                            position: relative;
+
+                            span {
+                                position: absolute;
+                                top: 0;
+                                left: 0;
+                                height: 100%;
+                                background-color: #ccc;
+                                border-radius: 20px;
+                                transition: width 0.5s linear;
+                            }
+                            .javascript{
+                                width: 65%;
+                            }
+                            .html{
+                                width: 80%;
+                            }
+                            .css{
+                                width: 70%;
+                            }
+                            .react{
+                                width: 55%;
+                            }
+                            .redux{
+                                width: 50%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .aboutConteiner {
+        height: auto;
+
+        .aboutInner .aboutInfo {
+            flex-direction: column;
+            align-items: center;
+
+            .aboutLeft {
+                width: 100%;
+            }
+
+            .aboutRight {
+                width: 100%;
+            }
+        }
+    }
 }

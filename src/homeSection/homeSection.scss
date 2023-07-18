@@ -1,3 +1,43 @@
+@mixin whidth_height ($w , $h) {
+    width: $w;
+    height: $h;
+}
+
+@mixin pad($pad...) {
+    padding: $pad;
+}
+
+@mixin flex() {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin bg_move($lr, $w, $h) {
+    background-position: $lr;
+    background-size: $w $h;
+}
+
+@mixin shiny-btn1($s, $r, $op) {
+    transform: scale($s) rotate($r);
+    opacity: $op;
+}
+
+@mixin left($left, $op) {
+    left: $left;
+    opacity: $op;
+}
+
+@mixin right($right, $op) {
+    right: $right;
+    opacity: $op;
+}
+
+@mixin bottom_top($trans, $op) {
+    transform: translateY($trans);
+    opacity: $op;
+}
+
 .homeSection {
     height: 100vh;
     background-image: url(./../images/home_bg.jpg);
@@ -6,13 +46,11 @@
     background-position: center;
     background-blend-mode: overlay;
     background-color: rgba(0, 0, 0, 0.7);
+    @include flex();
     animation: bg_move 30s infinite;
-    display: flex;
-    justify-content: center;
 
     .homeSectionInner {
-        margin-top: 92px;
-        width: 90%;
+        @include whidth_height(100%, 100%);
         position: relative;
         display: flex;
         flex-direction: column;
@@ -20,8 +58,7 @@
 
         &::after {
             content: "";
-            width: 100%;
-            height: 100%;
+            @include whidth_height(100%, 100%);
             background: url(./../images/home_bg-dot.png);
             position: absolute;
             top: 0;
@@ -29,27 +66,24 @@
 
         .info-section {
             position: relative;
-            width: 100%;
+            @include whidth_height(100%, 60%);
             display: flex;
             justify-content: space-between;
             overflow: hidden;
 
             .info-left {
                 position: relative;
-                width: 50%;
-                display: flex;
-                justify-content: center;
-                align-items: center;
+                @include whidth_height(50%, 100%);
+                @include flex();
                 animation: left 3s linear normal;
 
                 .portfolio-img {
-                    width: 500px;
-                    height: 500px;
+                    @include whidth_height(100%, 100%);
                     position: relative;
 
                     .img-inner {
-                        width: 400px;
-                        height: 400px;
+                        @include whidth_height(60%, 100%);
+                        @include flex();
                         position: absolute;
                         top: 0;
                         bottom: 0;
@@ -57,23 +91,20 @@
                         right: 0;
                         margin: auto;
 
-                        .portfolio-img {
+                        img {
+                            @include whidth_height(90%, 90%);
                             border-radius: 30px;
                             position: absolute;
                             z-index: 4;
-                            width: 400px;
-                            height: 400px;
                         }
 
                         &::after {
                             content: '';
                             position: absolute;
                             z-index: 3;
-                            left: 0;
-                            width: 400px;
-                            height: 400px;
+                            left: 3%;
+                            @include whidth_height(95%, 80%);
                             background: linear-gradient(-45deg, #8490ff, #62bdfc);
-                            -webkit-transform: rotate(-12deg);
                             transform: rotate(-12deg);
                             border-radius: 20px;
                         }
@@ -84,19 +115,18 @@
             .info-right {
                 position: relative;
                 z-index: 2;
-                width: 50%;
+                @include whidth_height(50%, 100%);
                 display: flex;
-                justify-content: center;
                 align-items: center;
                 animation: right 3s linear normal;
 
                 .text-info {
-                    width: 100%;
-                    height: 60%;
+                    @include whidth_height(100%, 60%);
                     color: white;
 
                     .mySelf {
                         font-size: 40px;
+
                         span {
                             color: #799ffe;
                         }
@@ -105,6 +135,7 @@
                     h2 {
                         margin-top: 15px;
                         font-size: 30px;
+
                         span {
                             color: #799ffe;
                         }
@@ -112,15 +143,17 @@
 
                     p {
                         margin-top: 15px;
+                        padding-right: 30px;
+                        color: #ccc;
                         font-size: 20px;
                     }
 
                     .tooBtn {
-                        margin-top: 35px;
+                        margin-top: 20px;
+                        display: flex;
+                        align-items: center;
 
                         a {
-                            width: 130px;
-                            height: 40px;
                             padding: 10px 15px;
                             margin-right: 20px;
                             border: none;
@@ -131,7 +164,23 @@
                             font-size: 14px;
                             font-weight: 600;
                             text-decoration: none;
-                            border-radius: 30px;
+                            border-radius: 30px
+                        }
+
+                        .ms-btn {
+                            overflow: hidden;
+                            position: relative;
+
+                            &::before {
+                                position: absolute;
+                                content: "";
+                                display: inline-block;
+                                top: -180px;
+                                left: 0;
+                                @include whidth_height(30px, 100%);
+                                background-color: #fff;
+                                animation: shiny-btn1 3s ease-in-out infinite;
+                            }
                         }
                     }
                 }
@@ -139,17 +188,14 @@
         }
 
         .mouse-bottom {
-            height: 55px;
             width: 100%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            animation: width60-100 2s linear;
+            margin-top: 10px;
+            @include flex();
+            animation:  bottom_top 2s linear;
 
             .mouse-inner {
                 cursor: pointer;
-                width: 30px;
-                height: 50px;
+                @include whidth_height(30px, 50px);
                 border-radius: 20px;
                 border: 2px solid white;
                 position: relative;
@@ -162,8 +208,7 @@
                     right: 0;
                     margin: auto;
                     content: '';
-                    width: 4px;
-                    height: 10px;
+                    @include whidth_height(4px, 10px);
                     background-color: #fff;
                     border-radius: 5px;
                     animation: scrollDownAnimation 2s infinite;
@@ -173,39 +218,28 @@
     }
 }
 
-
 @media (max-width: 992px) {
     .homeSection .homeSectionInner {
-        margin-top: 72px;
-
         .info-section {
             display: flex;
             flex-direction: column;
             align-items: center;
             z-index: 1;
+            height: 80%;
 
             .info-left {
                 position: unset;
-                width: 200px;
-                height: 200px;
+                margin-top: 40px;
 
-                .portfolio-img {
-                    width: 200px;
-                    height: 200px;
+                .portfolio-img .img-inner {
 
-                    .img-inner {
-                        width: 200px;
-                        height: 200px;
+                    img {
+                        width: 65%;
+                    }
 
-                        &::after {
-                            width: 200px;
-                            height: 200px;
-                        }
-
-                        .portfolio-img {
-                            width: 200px;
-                            height: 200px;
-                        }
+                    &::after {
+                        left: 14%;
+                        width: 70%;
                     }
                 }
             }
@@ -214,7 +248,6 @@
                 position: unset;
                 text-align: center;
                 align-items: start;
-                margin-top: 10px;
                 width: 90%;
 
                 .text-info {
@@ -223,16 +256,17 @@
                     }
 
                     h2 {
-                        margin-top: 10px;
+                        margin-top: 0;
                         font-size: 20px;
                     }
 
                     p {
-                        margin-top: 10px;
+                        margin-top: 0;
+                        padding: 0;
                     }
 
                     .tooBtn {
-                        margin-top: 10px;
+                        margin-top: 0;
                         display: flex;
                         justify-content: space-around;
 
@@ -246,51 +280,57 @@
     }
 }
 
-
-
-@keyframes left {
+@keyframes bottom_top {
     0% {
-        left: -300px;
-        opacity: 0;
+        @include bottom_top(120px, 0);
+    }
+    100%{
+        @include bottom_top(0, 1);
+    }
+
+}
+
+@keyframes shiny-btn1 {
+    0% {
+        @include shiny-btn1(0, 45deg, 0);
+    }
+
+    80% {
+        @include shiny-btn1(0, 45deg, 0.5);
+    }
+
+    81% {
+        @include shiny-btn1(4, 45deg, 1);
     }
 
     100% {
-        left: 0;
-        opacity: 1;
+        @include shiny-btn1(50, 45deg, 0);
+    }
+}
+
+@keyframes left {
+    0% {
+        @include left(-300px, 0);
+    }
+
+    100% {
+        @include left(0, 1);
     }
 }
 
 @keyframes right {
     0% {
-        right: -300px;
-        opacity: 0;
+        @include right(-300px, 0);
     }
 
     100% {
-        right: 0;
-        opacity: 1;
+        @include right(0, 1);
     }
 }
-
-
-@keyframes width60-100 {
-    0% {
-        width: 70%;
-        opacity: 0;
-    }
-
-    100% {
-        width: 100%;
-        opacity: 1;
-    }
-}
-
-
 
 @keyframes scrollDownAnimation {
     0% {
         opacity: 0;
-        -webkit-transform: translate(0, 0);
         transform: translate(0, 0);
     }
 
@@ -300,7 +340,6 @@
 
     80% {
         opacity: 0;
-        -webkit-transform: translate(0, 20px);
         transform: translate(0, 20px);
     }
 
@@ -309,27 +348,20 @@
     }
 }
 
-
-
-
 @keyframes bg_move {
     0% {
-        background-position: left;
-        background-size: 100% 100%;
+        @include bg_move(left, 100%, 100%);
     }
 
     30% {
-        background-position: right;
-        background-size: 125% 125%;
+        @include bg_move(right, 125%, 125%);
     }
 
     60% {
-        background-position: left;
-        background-size: 125% 125%;
+        @include bg_move(left, 125%, 125%);
     }
 
     100% {
-        background-position: right;
-        background-size: 100% 100%;
+        @include bg_move(right, 100%, 100%);
     }
 }
