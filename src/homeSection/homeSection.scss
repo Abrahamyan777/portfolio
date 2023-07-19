@@ -104,7 +104,7 @@
                             z-index: 3;
                             left: 3%;
                             @include whidth_height(95%, 80%);
-                            background: linear-gradient(-45deg, #8490ff, #62bdfc);
+                            background: linear-gradient(-45deg, #677993, #2c394a);
                             transform: rotate(-12deg);
                             border-radius: 20px;
                         }
@@ -128,7 +128,7 @@
                         font-size: 40px;
 
                         span {
-                            color: #799ffe;
+                            color: #677993;
                         }
                     }
 
@@ -137,7 +137,7 @@
                         font-size: 30px;
 
                         span {
-                            color: #799ffe;
+                            color: #677993;
                         }
                     }
 
@@ -157,7 +157,7 @@
                             padding: 10px 15px;
                             margin-right: 20px;
                             border: none;
-                            background: linear-gradient(-45deg, #8490ff, #62bdfc);
+                            background: linear-gradient(-45deg, #677993, #2c394a);
                             color: #fff;
                             overflow: hidden;
                             text-align: center;
@@ -230,6 +230,7 @@
             .info-left {
                 position: unset;
                 margin-top: 40px;
+                width: 70%;
 
                 .portfolio-img .img-inner {
 

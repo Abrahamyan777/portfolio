@@ -1,3 +1,5 @@
+import ListTitle from '../components/listContact/listContact';
+import ListSkills from '../components/listSkills/listSkills';
 import './about.scss'
 
 
@@ -24,93 +26,14 @@ const About = () => {
 
                             <div className='contact'>
                                 <ul>
-                                    <li>
-                                        <span className='title'>
-                                            Full Name
-                                            <b>:</b>
-                                        </span>
-                                        <span className='titleInfo'>Grigor Abrahamyan</span>
-
-                                    </li>
-                                    <li>
-                                        <span className='title'>
-                                            Age
-                                            <b>:</b>
-                                        </span>
-                                        <span>27 Years</span>
-                                    </li>
-                                    <li>
-                                        <span className='title'>
-                                            Phone No
-                                            <b>:</b>
-                                        </span>
-                                        <span>+374 93 33 43 95</span>
-                                    </li>
-                                    <li>
-                                        <span className='title'>
-                                            Email
-                                            <b>:</b>
-                                        </span>
-                                        <span>abrahamyan051996@gmail.com</span>
-                                    </li>
-                                    <li>
-                                        <span className='title'>
-                                            Address
-                                            <b>:</b>
-                                        </span>
-                                        <span>Ararat Armenia</span>
-                                    </li>
+                                    <ListTitle />
                                 </ul>
                             </div>
                         </div>
                     </div>
                     <div className='aboutRight'>
                         <ul>
-                            <li>
-                                <div className='skills'>
-                                    <h3>JAVASCRIPT</h3>
-                                    <span>65%</span>
-                                </div>
-                                <div className='progress-bar'>
-                                    <span className='javascript'></span>
-                                </div>
-                            </li>
-                            <li>
-                                <div className='skills'>
-                                    <h3>HTML</h3>
-                                    <span>80%</span>
-                                </div>
-                                <div className='progress-bar'>
-                                    <span className='html'></span>
-                                </div>
-                            </li>
-                            <li>
-                                <div className='skills'>
-                                    <h3>CSS  / SCSS</h3>
-                                    <span >70%</span>
-                                </div>
-                                <div className='progress-bar'>
-                                    <span className='css'></span>
-                                </div>
-                            </li>
-                            <li>
-                                <div className='skills'>
-                                    <h3>React</h3>
-                                    <span>55%</span>
-                                </div>
-                                <div className='progress-bar'>
-                                    <span className='react'></span>
-                                </div>
-                            </li>
-                            <li>
-                                <div className='skills'>
-                                    <h3>Redux</h3>
-                                    <span>50%</span>
-                                </div>
-                                <div className='progress-bar'>
-                                    <span className='redux'></span>
-                                </div>
-                            </li>
+                            <ListSkills />
                         </ul>
                     </div>
                 </div>

@@ -11,6 +11,20 @@ const Header = () => {
     const [screenWidth, setScreenWidth] = useState(window.innerWidth);
     const [open, setOpen] = useState(false)
     const list = ['Home', 'About', 'Experience', 'Portfolio','News', 'Contact Us'];
+    const [fix, setFix] = useState(false);
+
+    function  fixed() {
+        if(window.scrollY > 50){
+            setFix(true)
+        }
+        else{
+            setFix(false)
+        }
+    }
+    console.log(fix);
+
+
+    window.addEventListener('scroll' ,fixed );
 
     useEffect(() => {
         const changeWidth = () => {
@@ -24,7 +38,7 @@ const Header = () => {
     }, []);
 
     return (
-        <header className="header-wrapper">
+        <header className={fix ? "header-wrapper-fix header-wrapper" : ' header-wrapper'} >
             <div className="header-container">
                 <div className='maser-logo'>
                     <NavLink to='/'>
