@@ -11,6 +11,6 @@
     background-color: #cfcece;
 }
 ::-webkit-scrollbar-thumb{
-    background-color: #799ffe;;
+    background: linear-gradient(-45deg, #677993, #2c394a);
     border-radius: 15px;
 }

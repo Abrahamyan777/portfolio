@@ -11,7 +11,7 @@
             color: white;
 
             span {
-                color: #799ffe;
+                color: #677993;
             }
         }
 
@@ -108,19 +108,24 @@
                                 border-radius: 20px;
                                 transition: width 0.5s linear;
                             }
-                            .javascript{
+
+                            .javascript {
                                 width: 65%;
                             }
-                            .html{
+
+                            .html {
                                 width: 80%;
                             }
-                            .css{
+
+                            .css {
                                 width: 70%;
                             }
-                            .react{
+
+                            .react {
                                 width: 55%;
                             }
-                            .redux{
+
+                            .redux {
                                 width: 50%;
                             }
                         }
@@ -141,6 +146,14 @@
 
             .aboutLeft {
                 width: 100%;
+
+                .info .contact ul li {
+                    &:nth-child(4) {
+                        .titleInfo {
+                            font-size: 13px;
+                        }
+                    }
+                }
             }
 
             .aboutRight {
