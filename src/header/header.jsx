@@ -1,5 +1,5 @@
 import './header.scss'
-import logo from './../images/masterly-logo.png'
+import logo from './../images/instart.webp'
 import { useEffect, useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import { BiMenu } from 'react-icons/bi'
@@ -21,8 +21,6 @@ const Header = () => {
             setFix(false)
         }
     }
-    console.log(fix);
-
 
     window.addEventListener('scroll' ,fixed );
 
