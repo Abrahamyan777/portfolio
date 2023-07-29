@@ -27,8 +27,8 @@ const ServiceBox = () => {
         }
     ]
     return (
-        serviceList.map(({logo, title, text}) => (
-            <div className="serviceBox">
+        serviceList.map(({logo, title, text}, index) => (
+            <div className="serviceBox" key={index}>
                 <div className='logo'>
                     {logo}
                 </div>

@@ -10,7 +10,7 @@ import MenuList from '../components/listMenu/listMenu';
 const Header = () => {
     const [screenWidth, setScreenWidth] = useState(window.innerWidth);
     const [open, setOpen] = useState(false)
-    const list = ['Home', 'About', 'Experience', 'Portfolio','News', 'Contact Us'];
+    
     const [fix, setFix] = useState(false);
 
     function  fixed() {
@@ -46,7 +46,7 @@ const Header = () => {
                 {(screenWidth > 992) ? (
                     <nav className='menu-list'>
                         <ul>
-                            <MenuList list={list} />
+                            <MenuList />
                         </ul>
                     </nav>
                 )

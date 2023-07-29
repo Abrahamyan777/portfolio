@@ -1,0 +1,48 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    span{
+        color: red;
+        height: 30px;
+    }
+
+    input,
+    button,
+    textarea {
+        border-radius: 30px;
+        font-size: 15px;
+        padding: 10px 15px;
+        border: 2px solid #2c2f36;
+        color: #ccc;
+        background: #17181c;
+        font-weight: 400;
+        line-height: 1.5;
+        &:focus{
+            outline: none;
+            background: none;
+            box-shadow: none;
+        }
+        
+    }
+
+    button {
+        color: #fff;
+        font-size: 14px;
+        font-weight: 600;
+        text-decoration: none;
+        border-radius: 30px;
+        width: 130px;
+        height: 40px;
+        cursor: pointer;
+        &:hover{
+            background-color: white;
+            color: black;
+        }
+    }
+
+    textarea {
+        height: 90px;
+        margin-bottom: 25px;
+    }
+
+}

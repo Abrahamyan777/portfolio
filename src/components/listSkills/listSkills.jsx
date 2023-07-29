@@ -27,9 +27,9 @@ const ListSkills = () => {
 
     ]
     return (
-        list.map(({ skill, percent }) => {
+        list.map(({ skill, percent }, index) => {
             return (
-                <li>
+                <li key={index}>
                     <div className='skills'>
                         <h3>{skill}</h3>
                         <span>{percent}</span>
