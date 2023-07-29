@@ -3,6 +3,9 @@ import './listMenu.scss'
 
 
 const MenuList = (props) => {
+
+    const list = ['Home', 'About', 'Experience', 'Portfolio','News', 'Contact Us'];
+
     const hendleClick = () => {
         if (props.open && props.setOpen) {
             props.setOpen(!props.open)
@@ -10,10 +13,11 @@ const MenuList = (props) => {
     }
 
     return (
-        props.list.map((el, index) => (
+        list.map((el, index) => (
             <li key={index}>
                 <NavLink
-                    to={el.toLowerCase()} onClick={() => hendleClick()}
+                    to={ `portfolio/` + el.toLowerCase()}
+                    onClick={() => hendleClick()}
                     className={({isActive}) => isActive ? "active-link" : ""}
                 >{el}</NavLink>
             </li>

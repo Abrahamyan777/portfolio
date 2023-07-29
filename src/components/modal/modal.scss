@@ -22,7 +22,7 @@
     justify-content: flex-end;
 
     .menu {
-        @include whidth_height(40%, 1000vh);
+        @include whidth_height(40%, 100vh);
         background-color: white;
         position: absolute;
         z-index: 22;

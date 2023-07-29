@@ -21,14 +21,14 @@ const ListTitle = () => {
         },
         {
             title: 'Address',
-            value: "Ararat Armenia"
+            value: "Yerevan Armenia"
         },
 
     ]
     return (
-        list.map(({ title, value }) => {
+        list.map(({ title, value },index) => {
             return (
-                <li>
+                <li key={index}>
                     <span className='title'>
                         {title}
                         <b>:</b>

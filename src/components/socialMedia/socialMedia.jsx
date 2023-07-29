@@ -24,8 +24,8 @@ const SocialMedia = () => {
     ]
     return (
 
-        socialList.map(({ link, icon }) => (
-            <li>
+        socialList.map(({ link, icon }, index) => (
+            <li key={index}>
                 <NavLink to={link} target="_blank">
                     {icon} 
                 </NavLink>
