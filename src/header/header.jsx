@@ -7,22 +7,22 @@ import Modal from '../components/modal/modal';
 import MenuList from '../components/listMenu/listMenu';
 
 
-const Header = () => {
+const Header = (props) => {
     const [screenWidth, setScreenWidth] = useState(window.innerWidth);
     const [open, setOpen] = useState(false)
-    
+
     const [fix, setFix] = useState(false);
 
-    function  fixed() {
-        if(window.scrollY > 50){
+    function fixed() {
+        if (window.scrollY > 50) {
             setFix(true)
         }
-        else{
+        else {
             setFix(false)
         }
     }
 
-    window.addEventListener('scroll' ,fixed );
+    window.addEventListener('scroll', fixed);
 
     useEffect(() => {
         const changeWidth = () => {
@@ -46,7 +46,12 @@ const Header = () => {
                 {(screenWidth > 992) ? (
                     <nav className='menu-list'>
                         <ul>
-                            <MenuList />
+                            <MenuList
+                                homeRef={props.homeRef}
+                                aboutRef={props.aboutRef}
+                                experienseRef={props.experienseRef}
+                                contactRef={props.contactRef}
+                            />
                         </ul>
                     </nav>
                 )
@@ -58,7 +63,7 @@ const Header = () => {
                     </div>
                 }
                 {
-                    open && <Modal  open={open} setOpen={setOpen} />
+                    open && <Modal open={open} setOpen={setOpen} />
                 }
             </div>
         </header>

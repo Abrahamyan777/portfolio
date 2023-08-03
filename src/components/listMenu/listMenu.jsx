@@ -6,10 +6,21 @@ const MenuList = (props) => {
 
     const list = ['Home', 'About', 'Experience', 'Portfolio','News', 'Contact Us'];
 
-    const hendleClick = () => {
+    const hendleClick = (index, el) => {
         if (props.open && props.setOpen) {
-
             props.setOpen(!props.open)
+        }
+        
+        if(el === 'Home'){
+            props.homeRef.current?.scrollIntoView({ behavior: 'smooth' });
+        }else if(el === 'About'){
+            props.aboutRef.current?.scrollIntoView({ behavior: 'smooth' });
+        }
+        else if(el === 'Experience'){
+            props.experienseRef.current?.scrollIntoView({ behavior: 'smooth' });
+        }
+        else if(el === 'Contact Us'){
+            props.contactRef.current?.scrollIntoView({ behavior: 'smooth' });
         }
     }
 
@@ -18,7 +29,7 @@ const MenuList = (props) => {
             <li key={index}>
                 <NavLink
                     // to={ `portfolio/` + el.toLowerCase()} 
-                    onClick={() => hendleClick()}
+                    onClick={() => hendleClick(index, el)}
                     // className={({isActive}) => isActive ? "active-link" : ""}
                 >{el}</NavLink>
             </li>

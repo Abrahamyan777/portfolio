@@ -3,9 +3,11 @@ import ListSkills from '../components/listSkills/listSkills';
 import './about.scss'
 
 
-const About = () => {
+const About = (props) => {
+
+
     return (
-        <div className="aboutConteiner">
+        <div className="aboutConteiner" ref={props.aboutRef}>
             <div className='aboutInner'>
                 <h1 className='aboutMe'>About
                     <span> Me</span>

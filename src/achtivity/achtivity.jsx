@@ -1,9 +1,11 @@
 import './achtivity.scss'
 
 
-const Achtivity = () => {
+const Achtivity = (props) => {
+
+
     return (
-        <div className='achtiveContainer'>
+        <div className='achtiveContainer' ref={props.experienseRef}>
             <div className='achtiveInner'>
                 <h3>My <span>Achievements</span></h3>
                 <div className='main'>
@@ -32,7 +34,6 @@ const Achtivity = () => {
                                 </div>
                                 <div className='timeLine-content'>
                                     <h5>Programming trainings
-                                        {/* <span>- First Class</span> */}
                                     </h5>
                                     <p>
                                         Python Programming (basics)<br></br>

@@ -4,9 +4,10 @@ import ContactForm from "../components/form/form";
 
 
 
-const Contact = () => {
+const Contact = (props) => {
+
     return (
-        <div className="contactContainer">
+        <div className="contactContainer" ref={props.contactRef}>
             <div className="contactInner">
                 <h2 className="title">Get in
                     <span className="touch">Touch</span>

@@ -1,10 +1,14 @@
 import './homeSection.scss';
-import img from './../images/my-img.jpg'
+import img from './../images/imag.jpeg'
 import { NavLink } from 'react-router-dom';
+import { useRef } from 'react';
 
-const HomeSection = () => {
+const HomeSection = (props) => {
+
+    
+
     return (
-        <div className="homeSection home-ms">
+        <div className="homeSection home-ms" ref={props.homeRef}>
             <div className='homeSectionInner'>
                 <div className='info-section'>
                     <div className='info-left'>
