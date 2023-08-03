@@ -8,6 +8,7 @@ const MenuList = (props) => {
 
     const hendleClick = () => {
         if (props.open && props.setOpen) {
+
             props.setOpen(!props.open)
         }
     }
@@ -16,9 +17,9 @@ const MenuList = (props) => {
         list.map((el, index) => (
             <li key={index}>
                 <NavLink
-                    to={ `portfolio/` + el.toLowerCase()}
+                    // to={ `portfolio/` + el.toLowerCase()} 
                     onClick={() => hendleClick()}
-                    className={({isActive}) => isActive ? "active-link" : ""}
+                    // className={({isActive}) => isActive ? "active-link" : ""}
                 >{el}</NavLink>
             </li>
         ))

@@ -1,5 +1,6 @@
 import './homeSection.scss';
 import img from './../images/my-img.jpg'
+import { NavLink } from 'react-router-dom';
 
 const HomeSection = () => {
     return (
@@ -29,8 +30,8 @@ const HomeSection = () => {
                                 and development.
                             </p>
                             <div className='tooBtn'>
-                                <a href='#' className='ms-btn'>Download CV</a>
-                                <a href='#'>More Info</a>
+                                <NavLink className='ms-btn'>Download CV</NavLink>
+                                <NavLink >More Info</NavLink>
                             </div>
                         </div>
                     </div>
