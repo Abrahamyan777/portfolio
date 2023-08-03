@@ -1,7 +1,9 @@
 .footerContainer {
     height: 62px;
     background-color: #17181c;
+    background-color: rgb(126, 126, 126);
     background: #1b1c20;
+
     .footerInner {
         height: 100%;
         padding: 0 5%;
@@ -52,6 +54,7 @@
                                 color: #1b1c20;
                             }
                         }
+
                         svg {
                             color: white;
                             font-size: 20px;

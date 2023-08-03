@@ -1,15 +1,30 @@
-
-
-
-
-
 .serviceContainer{
     background: #1b1c20;
-    padding: 60px 60px;
+    padding: 60px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     transition: all 2s ease-in-out;
-
+    .serviceBox {
+        height: 210px;
+        background-color: rgb(141, 141, 170);
+        margin: 20px;
+        padding: 20px;
+        color: #bbb;
+        text-align: center;
+        border-radius: 30px;
+        background: #202126;
+        border: 1px solid #2c2f36;
+        .logo{
+            svg{
+                width: 50px;
+                height: 50px;
+                margin-bottom: 10px;
+            }
+        }
+        h4{
+            margin: 10px 0;
+        }
+    }
 }
 
 @media screen and (max-width: 992px) {
@@ -26,6 +41,6 @@
 }
 @media screen and (max-width: 576px) {
     .serviceContainer {
-        padding: 40px 40px;
+        padding: 40px;
     }
 }

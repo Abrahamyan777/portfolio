@@ -1,0 +1,155 @@
+.achtiveContainer {
+    padding: 80px;
+    background-color: #17181c;
+    transition: all 2s ease;
+
+    .achtiveInner {
+        h3 {
+            color: #eee;
+            font-size: 30px;
+            line-height: 33px;
+            text-align: center;
+            padding: 0 0 30px 0;
+
+            span {
+                color: rgb(103, 121, 147);
+            }
+        }
+
+        .main {
+            display: flex;
+            .title {
+                color: #ccc;
+                font-size: 19px;
+                line-height: 22px;
+                margin-bottom: 30px;
+                text-transform: uppercase;
+            }
+
+            ul {
+                list-style: none;
+                position: relative;
+
+                &::after{
+                    position: absolute;
+                    content: "";
+                    width: 17px;
+                    height: auto;
+                    border: none;
+                    border-radius: 0;
+                    top: 0;
+                    bottom: -5px;
+                    border-bottom: 1px solid #fff;
+                }
+
+                li {
+                    padding: 0 40px;
+                    position: relative;
+                    .timeLine-info {
+                        span {
+                            color: #bbb;
+                        }
+                    }
+
+                    .timeLine-content {
+                        padding-bottom: 30px;
+
+                        h5 {
+                            font-size: 17px;
+                            line-height: 20px;
+                            margin-top: 15px;
+                            margin-bottom: 10px;
+                            color: rgb(103, 121, 147);
+                            font-weight: 500;
+
+                            span {
+                                margin-left: 15px;
+                                color: rgb(153, 153, 153);
+                                font-size: 14px;
+                            }
+                        }
+
+                        p {
+                            color: #bbb;
+                            font-size: 14px;
+                        }
+                    }
+
+                    .timeLine-marker {
+                        width: 15px;
+                        height: 100%;
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+
+                        &::before {
+                            content: "";
+                            width: 15px;
+                            border: 1px solid #ccc;
+                            border-radius: 100%;
+                            display: block;
+                            height: 15px;
+                            position: absolute;
+                            top: 4px;
+                            left: 0;
+                        }
+
+                        &::after {
+                            content: "";
+                            width: 1px;
+                            border-right: 1px solid #ccc;
+                            display: block;
+                            position: absolute;
+                            top: 24px;
+                            bottom: 0;
+                            left: 7px;
+                        }
+                    }
+                }
+            }
+
+            .education {
+                width: 50%;
+                transition: all 2s ease;
+            }
+
+            .experiense {
+                width: 50%;
+                transition: all 2s ease;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .achtiveContainer{
+        padding: 60px 80px;
+        .achtiveInner .main {
+            flex-direction: column;
+            align-items: center;
+            ul{
+                li{
+                    padding: 0 60px;
+                    .timeLine-content{
+                        padding-bottom: 20px;
+                    }
+                }
+            }
+            .education, .experiense  {
+                width: 100%;
+                &:first-child{
+                    margin-bottom: 30px;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 640px) {
+    .achtiveContainer {
+        padding: 40px 40px;
+        .achtiveInner .main ul li {
+            padding: 0 30px;
+        }
+
+    }
+}
