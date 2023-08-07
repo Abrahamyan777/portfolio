@@ -3,10 +3,11 @@
     justify-content: $jc;
 }
 
-@mixin width($w){
+@mixin width($w) {
     width: $w;
 }
-@mixin height($h){
+
+@mixin height($h) {
     height: $h;
 }
 
@@ -28,7 +29,7 @@
         }
 
         .aboutInfo {
-            @include width(90%);
+            @include width(100%);
             margin: 0 auto;
             @include flex(center);
             color: #ccc;
@@ -145,25 +146,39 @@
 @media (max-width: 992px) {
     .aboutConteiner {
         @include height(auto);
+        padding: 30px 0;
 
-        .aboutInner .aboutInfo {
-            flex-direction: column;
-            align-items: center;
+        .container {
+            padding: 0;
+        }
 
-            .aboutLeft {
-                @include width(100%);
+        .aboutInner {
+            .aboutMe{
+                padding-bottom: 10px;
+            }
+            .aboutInfo {
+                flex-direction: column;
+                align-items: center;
 
-                .info .contact ul li {
-                    &:nth-child(4) {
-                        .titleInfo {
-                            font-size: 13px;
+                .aboutLeft {
+                    @include width(100%);
+                    padding: 15px;
+
+                    .info .contact ul li {
+                        &:nth-child(4) {
+                            .titleInfo {
+                                font-size: 13px;
+                            }
                         }
                     }
                 }
-            }
-            .aboutRight {
-                @include width(100%);
+
+                .aboutRight {
+                    @include width(100%);
+                    padding: 15px;
+                }
             }
         }
+
     }
 }

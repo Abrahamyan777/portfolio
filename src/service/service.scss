@@ -1,9 +1,13 @@
 .serviceContainer{
     background: #1b1c20;
-    padding: 60px;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    transition: all 2s ease-in-out;
+   
+
+    .serviceInner{
+        padding: 60px 0;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        transition: all 2s ease-in-out;
+    }
     .serviceBox {
         height: 210px;
         background-color: rgb(141, 141, 170);
@@ -28,19 +32,25 @@
 }
 
 @media screen and (max-width: 992px) {
-    .serviceContainer {
+    .serviceContainer .serviceInner{
         padding: 50px 80px;
         grid-template-columns: 1fr 1fr;
     }
 }
 @media screen and (max-width: 768px) {
-    .serviceContainer {
+    .serviceContainer .serviceInner {
         padding: 50px 100px;
         grid-template-columns: 1fr ;
     }
 }
 @media screen and (max-width: 576px) {
     .serviceContainer {
-        padding: 40px;
+        .container{
+            padding: 0;
+        }
+        .serviceInner{
+            padding: 0px;
+        }
     }
+  
 }

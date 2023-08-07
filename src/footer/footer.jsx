@@ -1,5 +1,6 @@
 import "./footer.scss"
 import SocialMedia from "../components/socialMedia/socialMedia";
+import Container from "../components/container/container";
 
 
 
@@ -7,20 +8,22 @@ import SocialMedia from "../components/socialMedia/socialMedia";
 const Footer = () => {
     return (
         <footer className="footerContainer">
-            <div className="footerInner">
-                <div className="footerLeft">
-                    <h4>
-                        Copyright ©
-                        <span>GA_Web_Dev</span>
-                        all rights reserved.
-                    </h4>
+            <Container>
+                <div className="footerInner">
+                    <div className="footerLeft">
+                        <h4>
+                            Copyright ©
+                            <span>GA_Web_Dev</span>
+                            all rights reserved.
+                        </h4>
+                    </div>
+                    <div className="footerRight">
+                        <ul>
+                            <SocialMedia />
+                        </ul>
+                    </div>
                 </div>
-                <div className="footerRight">
-                    <ul>
-                        <SocialMedia />
-                    </ul>
-                </div>
-            </div>
+            </Container>
         </footer>
     )
 }

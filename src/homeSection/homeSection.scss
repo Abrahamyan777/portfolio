@@ -49,31 +49,34 @@
     @include flex();
     animation: bg_move 30s infinite;
 
+    &::after {
+        content: "";
+        @include whidth_height(100%, 100%);
+        background: url(./../images/home_bg-dot.png);
+        position: absolute;
+        top: 0;
+    }
+
     .homeSectionInner {
+        max-width: 1400px;
         @include whidth_height(100%, 100%);
         position: relative;
         display: flex;
         flex-direction: column;
         justify-content: center;
 
-        &::after {
-            content: "";
-            @include whidth_height(100%, 100%);
-            background: url(./../images/home_bg-dot.png);
-            position: absolute;
-            top: 0;
-        }
+
 
         .info-section {
             position: relative;
-            @include whidth_height(100%, 60%);
+            @include whidth_height(100%, 55%);
             display: flex;
             justify-content: space-between;
             overflow: hidden;
 
             .info-left {
                 position: relative;
-                @include whidth_height(50%, 100%);
+                @include whidth_height(60%, 100%);
                 @include flex();
                 animation: left 3s linear normal;
 
@@ -82,7 +85,7 @@
                     position: relative;
 
                     .img-inner {
-                        @include whidth_height(60%, 100%);
+                        @include whidth_height(100%, 100%);
                         @include flex();
                         position: absolute;
                         top: 0;
@@ -92,7 +95,7 @@
                         margin: auto;
 
                         img {
-                            @include whidth_height(90%, 90%);
+                            @include whidth_height(230px, 280px);
                             border-radius: 30px;
                             position: absolute;
                             z-index: 4;
@@ -102,8 +105,8 @@
                             content: '';
                             position: absolute;
                             z-index: 3;
-                            left: 3%;
-                            @include whidth_height(95%, 80%);
+                            left: 30%;
+                            @include whidth_height(250px, 260px);
                             background: linear-gradient(-45deg, #677993, #2c394a);
                             transform: rotate(-12deg);
                             border-radius: 20px;
@@ -115,7 +118,7 @@
             .info-right {
                 position: relative;
                 z-index: 2;
-                @include whidth_height(50%, 100%);
+                @include whidth_height(40%, 100%);
                 display: flex;
                 align-items: center;
                 animation: right 3s linear normal;
@@ -123,6 +126,9 @@
                 .text-info {
                     @include whidth_height(100%, 60%);
                     color: white;
+                    display: flex;
+                    justify-content: space-around;
+                    flex-direction: column;
 
                     .mySelf {
                         font-size: 40px;
@@ -165,10 +171,11 @@
                             font-weight: 600;
                             text-decoration: none;
                             border-radius: 30px;
-                            &:hover{
+
+                            &:hover {
                                 opacity: 0.7;
                             }
-                            
+
                         }
 
                         .ms-btn {
@@ -193,9 +200,8 @@
 
         .mouse-bottom {
             width: 100%;
-            margin-top: 10px;
             @include flex();
-            animation:  bottom_top 2s linear;
+            animation: bottom_top 2s linear;
 
             .mouse-inner {
                 cursor: pointer;
@@ -229,22 +235,31 @@
             flex-direction: column;
             align-items: center;
             z-index: 1;
-            height: 80%;
+            height: 100%;
 
             .info-left {
                 position: unset;
-                margin-top: 40px;
+                margin-top: 20px;
                 width: 70%;
 
                 .portfolio-img .img-inner {
 
                     img {
-                        width: 65%;
+                        width: 240px;
+                        height: 250px;
+                        position: relative;
                     }
 
                     &::after {
-                        left: 14%;
-                        width: 70%;
+                        left: 30px;
+                        width: 240px;
+                        height: 230px;
+                        position: absolute;
+                        top: 0;
+                        bottom: 0;
+                        left: -10px;
+                        right: 0;
+                        margin: auto;
                     }
                 }
             }
@@ -252,7 +267,7 @@
             .info-right {
                 position: unset;
                 text-align: center;
-                align-items: start;
+                align-items: center;
                 width: 90%;
 
                 .text-info {
@@ -271,13 +286,12 @@
                     }
 
                     .tooBtn {
-                        margin-top: 0;
                         display: flex;
                         justify-content: space-around;
 
                         a {
                             margin-right: 0;
-                       
+
                         }
                     }
                 }
@@ -285,12 +299,37 @@
         }
     }
 }
+@media (max-width: 500px) {
+    .homeSection .homeSectionInner .info-section .info-left .portfolio-img .img-inner{
+        &::after{
+            width: 185px;
+            height: 220px;        
+        }
+        img {
+            width: 180px;
+            height: 230px;
+        }
+    } 
+    .homeSection .homeSectionInner .info-section .info-right .text-info {
+
+        .mySelf {
+            font-size: 30px;
+        }
+        h2{
+            font-size: 12px
+        }
+        p{
+            font-size: 15px
+        }
+    }
+}
 
 @keyframes bottom_top {
     0% {
-        @include bottom_top(120px, 0);
+        @include bottom_top(60px, 0);
     }
-    100%{
+
+    100% {
         @include bottom_top(0, 1);
     }
 
@@ -316,7 +355,7 @@
 
 @keyframes left {
     0% {
-        @include left(-300px, 0);
+        @include left(-60px, 0);
     }
 
     100% {
@@ -326,7 +365,7 @@
 
 @keyframes right {
     0% {
-        @include right(-300px, 0);
+        @include right(-60px, 0);
     }
 
     100% {
