@@ -5,6 +5,7 @@ import { NavLink } from 'react-router-dom';
 import { BiMenu } from 'react-icons/bi'
 import Modal from '../components/modal/modal';
 import MenuList from '../components/listMenu/listMenu';
+import Container from '../components/container/container';
 
 
 const Header = (props) => {
@@ -37,35 +38,37 @@ const Header = (props) => {
 
     return (
         <header className={fix ? "header-wrapper-fix header-wrapper" : ' header-wrapper'} >
-            <div className="header-container">
-                <div className='maser-logo'>
-                    <NavLink to='/'>
-                        <img src={logo} alt='logo' />
-                    </NavLink>
-                </div>
-                {(screenWidth > 992) ? (
-                    <nav className='menu-list'>
-                        <ul>
-                            <MenuList
-                                homeRef={props.homeRef}
-                                aboutRef={props.aboutRef}
-                                experienseRef={props.experienseRef}
-                                contactRef={props.contactRef}
-                            />
-                        </ul>
-                    </nav>
-                )
-                    :
-                    <div className='iconDiv'>
-                        <button className='iconBtn' onClick={() => setOpen(!open)}>
-                            <BiMenu className='icon-menu' />
-                        </button>
+            <Container>
+                <div className="header-inner">
+                    <div className='maser-logo'>
+                        <NavLink to='/'>
+                            <img src={logo} alt='logo' />
+                        </NavLink>
                     </div>
-                }
-                {
-                    open && <Modal open={open} setOpen={setOpen} />
-                }
-            </div>
+                    {(screenWidth > 992) ? (
+                        <nav className='menu-list'>
+                            <ul>
+                                <MenuList
+                                    homeRef={props.homeRef}
+                                    aboutRef={props.aboutRef}
+                                    experienseRef={props.experienseRef}
+                                    contactRef={props.contactRef}
+                                />
+                            </ul>
+                        </nav>
+                    )
+                        :
+                        <div className='iconDiv'>
+                            <button className='iconBtn' onClick={() => setOpen(!open)}>
+                                <BiMenu className='icon-menu' />
+                            </button>
+                        </div>
+                    }
+                    {
+                        open && <Modal open={open} setOpen={setOpen} />
+                    }
+                </div>
+            </Container>
         </header>
     )
 }

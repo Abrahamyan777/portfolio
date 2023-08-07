@@ -1,6 +1,7 @@
 import './service.scss'
 import { BiCodeAlt } from 'react-icons/bi';
 import { AiOutlineAim, AiOutlineAntDesign, AiOutlineDesktop } from "react-icons/ai";
+import Container from '../components/container/container';
 
 
 const Service = () => {
@@ -30,17 +31,21 @@ const Service = () => {
 
     return (
         <div className="serviceContainer">
-            {
-                serviceList.map(({ logo, title, text }, index) => (
-                    <div className="serviceBox" key={index}>
-                        <div className='logo'>
-                            {logo}
-                        </div>
-                        <h4>{title}</h4>
-                        <p>{text}</p>
-                    </div>
-                ))
-            }
+            <Container>
+                <div className='serviceInner'>
+                    {
+                        serviceList.map(({ logo, title, text }, index) => (
+                            <div className="serviceBox" key={index}>
+                                <div className='logo'>
+                                    {logo}
+                                </div>
+                                <h4>{title}</h4>
+                                <p>{text}</p>
+                            </div>
+                        ))
+                    }
+                </div>
+            </Container>
         </div>
     )
 }

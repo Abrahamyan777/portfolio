@@ -1,7 +1,7 @@
 .achtiveContainer {
-    padding: 80px;
     background-color: #17181c;
     transition: all 2s ease;
+    padding: 40px 0;
 
     .achtiveInner {
         h3 {
@@ -9,7 +9,7 @@
             font-size: 30px;
             line-height: 33px;
             text-align: center;
-            padding: 0 0 30px 0;
+            padding: 20px 0 30px 0;
 
             span {
                 color: rgb(103, 121, 147);
@@ -123,7 +123,6 @@
 
 @media screen and (max-width: 992px) {
     .achtiveContainer{
-        padding: 60px 80px;
         .achtiveInner .main {
             flex-direction: column;
             align-items: center;
@@ -146,7 +145,6 @@
 }
 @media (max-width: 640px) {
     .achtiveContainer {
-        padding: 40px 40px;
         .achtiveInner .main ul li {
             padding: 0 30px;
         }

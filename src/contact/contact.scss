@@ -3,6 +3,7 @@
     background-color: #17181c;
 
     .contactInner {
+        
         .title {
             padding-bottom: 35px;
             font-size: 33px;
@@ -19,6 +20,7 @@
 
         .contactInfo {
             display: flex;
+            transition: all 2s ease;
 
             .contactMap {
                 height: 400px;
@@ -61,7 +63,14 @@
         }
     }
 }
-
+@media (max-width: 768px) {
+    .contactContainer {
+        .container{
+            padding: 0;
+        }
+        padding: 0px;
+    }
+}
 @media (max-width: 540px) {
     .contactContainer .contactInner .contactInfo .contactMap {
         height: 300px;
