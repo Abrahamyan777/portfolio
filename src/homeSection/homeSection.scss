@@ -200,6 +200,7 @@
 
         .mouse-bottom {
             width: 100%;
+            margin-top: 3%;
             @include flex();
             animation: bottom_top 2s linear;
 
@@ -355,7 +356,7 @@
 
 @keyframes left {
     0% {
-        @include left(-60px, 0);
+        @include left(-50px, 0);
     }
 
     100% {
@@ -365,7 +366,7 @@
 
 @keyframes right {
     0% {
-        @include right(-60px, 0);
+        @include right(-50px, 0);
     }
 
     100% {

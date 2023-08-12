@@ -2,6 +2,8 @@ import './service.scss'
 import { BiCodeAlt } from 'react-icons/bi';
 import { AiOutlineAim, AiOutlineAntDesign, AiOutlineDesktop } from "react-icons/ai";
 import Container from '../components/container/container';
+import { useInView } from 'react-intersection-observer';
+import { useEffect, useRef } from 'react';
 
 
 const Service = () => {
@@ -29,10 +31,22 @@ const Service = () => {
         }
     ]
 
+    const {ref: myRocket, inView: ElIsVisible} = useInView({ threshold: 0.5 });
+
+    const myRef = useRef()
+
+    useEffect(() => {
+       if(ElIsVisible){
+        myRef.current.classList.add('animation')
+       }
+
+    }, [ElIsVisible])
+
+
     return (
-        <div className="serviceContainer">
+        <div className="serviceContainer" ref={myRocket}>
             <Container>
-                <div className='serviceInner'>
+                <div className='serviceInner' ref={myRef}>
                     {
                         serviceList.map(({ logo, title, text }, index) => (
                             <div className="serviceBox" key={index}>

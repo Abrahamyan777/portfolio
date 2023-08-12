@@ -7,7 +7,6 @@ import Container from '../components/container/container';
 const HomeSection = (props) => {
 
 
-
     return (
         <div className="homeSection home-ms" ref={props.homeRef}>
             <Container>
