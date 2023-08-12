@@ -18,6 +18,8 @@
         border-radius: 30px;
         background: #202126;
         border: 1px solid #2c2f36;
+        transform: translateY(120px);
+            opacity: 0.5;
         .logo{
             svg{
                 width: 50px;
@@ -28,6 +30,33 @@
         h4{
             margin: 10px 0;
         }
+    }
+    .animation{
+        div {
+            transition: 1s;
+            &:first-child{
+                transform: translateY(0px);
+                transition-delay: 0s;
+                opacity: 1;
+            }
+            &:nth-child(2){
+                transform: translateY(0px);
+                transition-delay: 0.3s;
+                opacity: 1;
+            }  
+            &:nth-child(3)  {
+                transform: translateY(0px);
+                transition-delay: 0.6s;
+                opacity: 1;
+            }    
+            &:nth-child(4)  {
+                transform: translateY(0px);
+                transition-delay: 0.9s;
+                opacity: 1;
+            }
+        }
+       
+
     }
 }
 

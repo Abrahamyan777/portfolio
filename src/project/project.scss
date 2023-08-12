@@ -20,6 +20,8 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
+            transform: translateY(120px);
+            opacity: 0.5;
 
             .countre {
                 color: rgb(103, 121, 147);
@@ -39,6 +41,37 @@
             }
         }
 
+
+    }
+    
+    .animation {
+        div{
+            transition: 1s;
+          
+            &:first-child {
+                transform: translateY(0px);
+                transition-delay: 0s;
+                opacity: 1;
+            }
+
+            &:nth-child(2) {
+                transform: translateY(0px);
+                transition-delay: 0.3s;
+                opacity: 1;
+            }
+
+            &:nth-child(3) {
+                transform: translateY(0px);
+                transition-delay: 0.6s;
+                opacity: 1;
+            }
+
+            &:nth-child(4) {
+                transform: translateY(0px);
+                transition-delay: 0.9s;
+                opacity: 1;
+            }
+        }
     }
 }
 
@@ -59,14 +92,15 @@
         }
     }
 }
+
 @media screen and (max-width: 500px) {
     .projectContainer {
         .container {
             padding: 0;
         }
+
         .projectInner {
             padding: 0;
         }
     }
 }
-
