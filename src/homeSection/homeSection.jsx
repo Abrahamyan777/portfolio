@@ -1,10 +1,16 @@
 import './homeSection.scss';
 import img from './../images/my-img.jpg'
 import { NavLink } from 'react-router-dom';
-import { useRef } from 'react';
 import Container from '../components/container/container';
 
 const HomeSection = (props) => {
+
+    const hendleClick = (moreInfo) => {
+        
+        if(moreInfo === "Experience"){
+            props.experienseRef.current?.scrollIntoView({ behavior: 'smooth' });
+        }
+    }
 
 
     return (
@@ -36,7 +42,7 @@ const HomeSection = (props) => {
                                 </p>
                                 <div className='tooBtn'>
                                     <NavLink className='ms-btn'>Download CV</NavLink>
-                                    <NavLink >More Info</NavLink>
+                                    <NavLink onClick={() => hendleClick("Experience")}>More Info</NavLink>
                                 </div>
                             </div>
                         </div>

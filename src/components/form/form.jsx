@@ -15,7 +15,6 @@ const ContactForm = () => {
 
     const { ref: refInView, inView: isShow } = useInView({ threshold: 0.5 });
 
-    console.log(isShow);
     const myref = useRef();
 
     useEffect(() => {

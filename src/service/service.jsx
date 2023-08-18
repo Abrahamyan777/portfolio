@@ -31,7 +31,7 @@ const Service = () => {
         }
     ]
 
-    const {ref: myRocket, inView: ElIsVisible} = useInView({ threshold: 0.5 });
+    const {ref: myRocket, inView: ElIsVisible} = useInView({ threshold: 0.3 });
 
     const myRef = useRef()
 

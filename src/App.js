@@ -9,6 +9,7 @@ import Header from './header/header';
 import HomeSection from './homeSection/homeSection';
 import Project from './project/project';
 import Service from './service/service';
+import Portfolio from './portfolio/portfolio';
 
 
 function App() {
@@ -18,7 +19,7 @@ function App() {
   useEffect(() => {
     setInterval(() => {
       setIsLoading(true)
-    }, 2000)
+    }, 1500)
   }, [])
   const homeRef = useRef();
   const aboutRef = useRef();
@@ -39,6 +40,7 @@ function App() {
             />
             <HomeSection
               homeRef={homeRef}
+              experienseRef={experienseRef}
             />
             <About
               aboutRef={aboutRef}
@@ -48,6 +50,7 @@ function App() {
               experienseRef={experienseRef}
             />
             <Project />
+            <Portfolio />
             <Contact
               contactRef={contactRef}
             />
