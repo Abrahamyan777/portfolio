@@ -1,6 +1,5 @@
 import Container from "../components/container/container";
 import "./portfolio.scss"
-import lamborghini from './../images/Lamborghini.png'
 
 
 const PortfolioItems = () => {
