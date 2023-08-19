@@ -150,9 +150,25 @@
 }
 
 @media screen and (max-width: 768px) {
-    .portfolioContainer .portfolioGrid {
-        .ItemGrid {
-            @include grid(1, 5%);
+    .portfolioContainer{
+        .portfolioGrid {
+            .ItemGrid {
+                @include grid(1, 5%);
+            }
+        }
+        .portfolio-filter ul li {
+            margin-right: 0;
+            font-size: 10px;
+        }
+    } 
+  
+}
+@media screen and (max-width: 500px) {
+    .portfolioContainer{
+        padding: 0;
+      
+         .portfolioGrid {
+            padding: 0 15px;
         }
     }
 }
