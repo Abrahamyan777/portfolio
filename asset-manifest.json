@@ -1,19 +1,17 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.0468306a.css",
-    "main.js": "/portfolio/static/js/main.d0cc180b.js",
+    "main.css": "/portfolio/static/css/main.0fc8233e.css",
+    "main.js": "/portfolio/static/js/main.b90a9505.js",
     "static/js/787.128fc6e9.chunk.js": "/portfolio/static/js/787.128fc6e9.chunk.js",
-    "static/media/Lamborghini.png": "/portfolio/static/media/Lamborghini.6a8bead916b0a46627b8.png",
     "static/media/home_bg.jpg": "/portfolio/static/media/home_bg.ab1f536da2c1a29f81db.jpg",
-    "static/media/my-img.jpg": "/portfolio/static/media/my-img.0aa37350bc1b6ce654f4.jpg",
     "static/media/instart.webp": "/portfolio/static/media/instart.d6b1ffdc42ec92d5f1f8.webp",
     "index.html": "/portfolio/index.html",
-    "main.0468306a.css.map": "/portfolio/static/css/main.0468306a.css.map",
-    "main.d0cc180b.js.map": "/portfolio/static/js/main.d0cc180b.js.map",
+    "main.0fc8233e.css.map": "/portfolio/static/css/main.0fc8233e.css.map",
+    "main.b90a9505.js.map": "/portfolio/static/js/main.b90a9505.js.map",
     "787.128fc6e9.chunk.js.map": "/portfolio/static/js/787.128fc6e9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.0468306a.css",
-    "static/js/main.d0cc180b.js"
+    "static/css/main.0fc8233e.css",
+    "static/js/main.b90a9505.js"
   ]
 }
