@@ -48,6 +48,10 @@
                 padding: 0 10px;
                 font-weight: 600;
                 text-transform: uppercase;
+
+                &:hover {
+                    color: #677993;
+                }
             }
         }
     }
@@ -70,7 +74,7 @@
 
             .ItemsInner {
                 height: 100%;
-                
+
                 &:hover {
                     border-radius: 30px;
                     background-color: #17181c;
@@ -80,31 +84,31 @@
 
                         img {
                             filter: blur(1px);
-                            transition: all 0.8s ease-in-out;
+                            transition: all 1.2s ease-in-out;
                             transform: rotate(-5deg) scale(1.2);
                             background-color: #070708;
 
                         }
+
                         .overlay {
-                            display: none;
+                            opacity: 0;
+                            transition: all 1.2s ease-in-out;
+
                         }
                     }
 
                 }
 
                 .ItemsImg {
-
                     overflow: hidden;
                     height: 260px;
                     margin: 30px;
                     position: relative;
 
                     img {
-
                         width: 100%;
                         height: 100%;
                         border-radius: 15px;
-
                     }
 
                     .overlay {
@@ -113,6 +117,7 @@
                         top: 5%;
 
                         h3 {
+
                             span {
                                 display: block;
                                 color: white;
@@ -150,24 +155,26 @@
 }
 
 @media screen and (max-width: 768px) {
-    .portfolioContainer{
+    .portfolioContainer {
         .portfolioGrid {
             .ItemGrid {
                 @include grid(1, 5%);
             }
         }
+
         .portfolio-filter ul li {
             margin-right: 0;
             font-size: 10px;
         }
-    } 
-  
+    }
+
 }
+
 @media screen and (max-width: 500px) {
-    .portfolioContainer{
+    .portfolioContainer {
         padding: 0;
-      
-         .portfolioGrid {
+
+        .portfolioGrid {
             padding: 0 15px;
         }
     }

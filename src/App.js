@@ -10,6 +10,7 @@ import HomeSection from './homeSection/homeSection';
 import Project from './project/project';
 import Service from './service/service';
 import Portfolio from './portfolio/portfolio';
+import News from './news/news';
 
 
 function App() {
@@ -25,6 +26,8 @@ function App() {
   const aboutRef = useRef();
   const experienseRef = useRef();
   const contactRef = useRef();
+  const portfolioRef = useRef();
+
 
   return (
     <div className="App">
@@ -37,6 +40,7 @@ function App() {
               aboutRef={aboutRef}
               experienseRef={experienseRef}
               contactRef={contactRef}
+              portfolioRef={portfolioRef}
             />
             <HomeSection
               homeRef={homeRef}
@@ -50,7 +54,10 @@ function App() {
               experienseRef={experienseRef}
             />
             <Project />
-            <Portfolio />
+            <Portfolio
+              portfolioRef={portfolioRef}
+            />
+            <News />
             <Contact
               contactRef={contactRef}
             />

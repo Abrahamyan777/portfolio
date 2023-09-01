@@ -1,5 +1,5 @@
 import './homeSection.scss';
-import img from './../images/imag.jpeg'
+import img from './../images/my-img2.jpg'
 import { NavLink } from 'react-router-dom';
 import Container from '../components/container/container';
 

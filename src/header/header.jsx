@@ -53,6 +53,7 @@ const Header = (props) => {
                                     aboutRef={props.aboutRef}
                                     experienseRef={props.experienseRef}
                                     contactRef={props.contactRef}
+                                    portfolioRef={props.portfolioRef}
                                 />
                             </ul>
                         </nav>
