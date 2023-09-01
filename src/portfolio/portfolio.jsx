@@ -55,9 +55,9 @@ const PortfolioItems = () => {
 }
 
 
-const Portfolio = () => {
+const Portfolio = (props) => {
     return (
-        <div className="portfolioContainer">
+        <div className="portfolioContainer" ref={props.portfolioRef}>
             <Container>
                 <div className="portfolioInner">
                     <h2>My  <span>Portfolio</span></h2>

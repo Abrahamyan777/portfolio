@@ -22,7 +22,11 @@ const MenuList = (props) => {
         else if(el === 'Contact Us'){
             props.contactRef.current?.scrollIntoView({ behavior: 'smooth' });
         }
+        else if(el === 'Portfolio'){
+            props.portfolioRef.current?.scrollIntoView({ behavior: 'smooth' });
+        }
     }
+    
 
     return (
         list.map((el, index) => (
