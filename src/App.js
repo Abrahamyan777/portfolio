@@ -27,6 +27,7 @@ function App() {
   const experienseRef = useRef();
   const contactRef = useRef();
   const portfolioRef = useRef();
+  const newsRef = useRef();
 
 
   return (
@@ -41,6 +42,7 @@ function App() {
               experienseRef={experienseRef}
               contactRef={contactRef}
               portfolioRef={portfolioRef}
+              newsRef={newsRef}
             />
             <HomeSection
               homeRef={homeRef}
@@ -57,7 +59,9 @@ function App() {
             <Portfolio
               portfolioRef={portfolioRef}
             />
-            <News />
+            <News
+              newsRef={newsRef}
+            />
             <Contact
               contactRef={contactRef}
             />

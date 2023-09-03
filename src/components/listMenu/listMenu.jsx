@@ -25,6 +25,9 @@ const MenuList = (props) => {
         else if(el === 'Portfolio'){
             props.portfolioRef.current?.scrollIntoView({ behavior: 'smooth' });
         }
+        else if(el === 'News'){
+            props.newsRef.current?.scrollIntoView({ behavior: 'smooth'});
+        }
     }
     
 
