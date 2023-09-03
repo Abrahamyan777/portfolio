@@ -45,9 +45,7 @@ const PortfolioItems = () => {
                                 {title2 && <span>{title2}</span> }
                             </h3>
                         </div>
-
                     </div>
-
                 </div>
             </div>
         ))
