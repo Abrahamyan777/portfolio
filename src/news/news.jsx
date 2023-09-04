@@ -65,9 +65,9 @@ const News = (props) => {
         infinite: true,
         slidesToShow: 3,
         slidesToScroll: 1,
-        // autoplay: true,
-        // autoplaySpeed: 3500,
-        // pauseOnHover: true,
+        autoplay: true,
+        autoplaySpeed: 3000,
+        pauseOnHover: true,
         speed: 800,
         responsive: [
             {
