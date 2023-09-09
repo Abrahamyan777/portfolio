@@ -11,6 +11,7 @@ import Project from './project/project';
 import Service from './service/service';
 import Portfolio from './portfolio/portfolio';
 import News from './news/news';
+import Insta from './insta/insta';
 
 
 function App() {
@@ -65,6 +66,7 @@ function App() {
             <Contact
               contactRef={contactRef}
             />
+            <Insta />
             <Footer />
           </>
       }

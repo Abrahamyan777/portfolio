@@ -1,11 +1,8 @@
 import Container from '../components/container/container';
 import './news.scss'
 import Slider from 'react-slick';
-
 import "./slick.scss";
 import "./slick-theme.scss";
-import { createPath } from 'react-router-dom';
-
 
 const News = (props) => {
 
