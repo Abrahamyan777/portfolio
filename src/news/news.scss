@@ -58,8 +58,7 @@
                         img {
                             width: 100%;
                             border-radius: 20px;
-
-
+                            
                             &:hover {
                                 filter: blur(1px);
                                 transition: all 1.2s ease-in-out;
@@ -89,6 +88,5 @@
             }
 
         }
-
     }
 }
