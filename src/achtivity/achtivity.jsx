@@ -98,11 +98,6 @@ const Achtivity = (props) => {
                                     <div className='timeLine-content'>
                                         <h5>Freelancer
                                         </h5>
-                                        <p>
-                                            " kwork.ru "
-                                            " upwork.com "
-                                            " freelancer.com "
-                                        </p>
                                     </div>
                                     <div className='timeLine-marker'></div>
                                 </li>
