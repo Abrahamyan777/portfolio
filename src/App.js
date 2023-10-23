@@ -30,7 +30,6 @@ function App() {
   const portfolioRef = useRef();
   const newsRef = useRef();
 
-
   return (
     <div className="App">
       {
