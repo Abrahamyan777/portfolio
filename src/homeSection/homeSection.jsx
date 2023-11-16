@@ -1,5 +1,5 @@
 import './homeSection.scss';
-import img from './../images/my-img.jpg'
+import img from './../images/imag.jpeg'
 import { NavLink } from 'react-router-dom';
 import Container from '../components/container/container';
 
@@ -9,7 +9,6 @@ const HomeSection = (props) => {
             props.experienseRef.current?.scrollIntoView({ behavior: 'smooth' });
         }
     }
-
 
     return (
         <div className="homeSection home-ms" ref={props.homeRef}>
