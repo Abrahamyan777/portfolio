@@ -63,9 +63,9 @@ const News = (props) => {
         slidesToShow: 3,
         slidesToScroll: 1,
         autoplay: true,
-        autoplaySpeed: 3000,
+        autoplaySpeed: 2000,
         pauseOnHover: true,
-        speed: 800,
+        speed: 2400,
         responsive: [
             {
                 breakpoint: 1024,

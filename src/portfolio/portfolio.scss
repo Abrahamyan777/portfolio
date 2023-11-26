@@ -71,6 +71,10 @@
             background-color: #202126;
             border: 1px solid #2c2f36;
             border-radius: 30px;
+            transition: 1.5s;
+            transform: translateY(120px);
+            opacity: 0;
+
 
             .ItemsInner {
                 height: 100%;
@@ -136,6 +140,43 @@
                 }
 
             }
+        }
+
+    }
+
+    .animationPort {
+        div:first-child{
+            transform: translateY(0px);
+            transition-delay: 0s;
+            opacity: 1;
+        }
+        div:nth-child(2) {
+            transform: translateY(0px);
+            transition-delay: 0.3s;
+            opacity: 1;
+        }
+
+        div:nth-child(3) {
+            transform: translateY(0px);
+            transition-delay: 0.6s;
+            opacity: 1;
+        }
+
+        div:nth-child(4) {
+            transform: translateY(0px);
+            transition-delay: 0.9s;
+            opacity: 1;
+        }
+        div:nth-child(5) {
+            transform: translateY(0px);
+            transition-delay: 1.2s;
+            opacity: 1;
+        }
+
+        div:nth-child(6) {
+            transform: translateY(0px);
+            transition-delay: 1.5s;
+            opacity: 1;
         }
     }
 }

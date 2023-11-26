@@ -1,8 +1,13 @@
+import { useInView } from "react-intersection-observer";
 import Container from "../components/container/container";
 import "./portfolio.scss"
+import { useEffect, useRef } from "react";
 
 
-const PortfolioItems = () => {
+const PortfolioItems = (props) => {
+
+ 
+
     const Items = [
         {
             img: "https://maraviyainfotech.com/projects/masterly/demo-2/assets/img/portfolio/11.jpg",
@@ -31,35 +36,56 @@ const PortfolioItems = () => {
             title1: "Development",
             title2: "3D Graphics",
         },
-    
-         ]
-    return(
-        Items.map(({img, title1, title2}, index) => (
-            <div className="ItemWrapper ItemGrid"  key={index}>
-                <div className="ItemsInner">
+
+    ]
+    return (
+
+        Items.map(({ img, title1, title2 }, index) => (
+            <div className="ItemWrapper ItemGrid" key={index}  >
+                <div className="ItemsInner" >
                     <div className="ItemsImg">
-                        <img  src={img} alt="img"/>
+                        <img src={img} alt="img" />
                         <div className="overlay">
                             <h3>
                                 <span>{title1}</span>
-                                {title2 && <span>{title2}</span> }
+                                {title2 && <span>{title2}</span>}
                             </h3>
                         </div>
                     </div>
                 </div>
             </div>
         ))
+
+
     )
 }
 
 
 const Portfolio = (props) => {
+
+
+    const itemsRef = useRef()
+
+    const { ref: myRocet, inView: ElIsVisible } = useInView({ threshold: 0.3 })
+    console.log(ElIsVisible);
+
+    useEffect(() => {
+        if (ElIsVisible) {
+           itemsRef.current.classList.add("animationPort")
+
+        }
+
+    }, [ElIsVisible])
+
+
+
+
     return (
         <div className="portfolioContainer" ref={props.portfolioRef}>
             <Container>
-                <div className="portfolioInner">
+                <div className="portfolioInner" ref={myRocet}>
                     <h2>My  <span>Portfolio</span></h2>
-                    <div className="portfolio-filter">
+                    {/* <div className="portfolio-filter">
                         <ul>
                             <li>
                                 ALL
@@ -77,10 +103,10 @@ const Portfolio = (props) => {
                                 Templates
                             </li>
                         </ul>
-                    </div>
+                    </div> */}
 
-                    <div className="portfolioGrid">
-                     <PortfolioItems />
+                    <div className="portfolioGrid" ref={itemsRef}>
+                        <PortfolioItems />
                     </div>
                 </div>
             </Container>
