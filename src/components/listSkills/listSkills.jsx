@@ -23,6 +23,10 @@ const ListSkills = () => {
             skill: 'Redux',
             percent: "50%"
         },
+        {
+            skill: 'GitHub',
+            percent: "30%"
+        }
      
 
     ]

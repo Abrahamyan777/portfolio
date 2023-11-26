@@ -45,7 +45,7 @@ const Insta = () => {
         slidesToScroll: 1,
         autoplay: true,
         speed: 10000,
-        autoplaySpeed: true,
+        autoplaySpeed: 800,
         cssEase: "linear",
         pauseOnHover: true,
         responsive: [

@@ -1,10 +1,22 @@
+import { useInView } from 'react-intersection-observer';
 import Container from '../components/container/container';
 import ListTitle from '../components/listContact/listContact';
 import ListSkills from '../components/listSkills/listSkills';
 import './about.scss'
+import { useEffect, useRef } from 'react';
 
 
 const About = (props) => {
+
+    const { ref: myRocet, inView: ElIsVisible } = useInView({ threshold: 0.5 })
+    const myRef = useRef()
+
+    useEffect(()=> {
+        if(ElIsVisible){
+            myRef.current.classList.add("animation")
+        }
+
+    }, [ElIsVisible])
 
 
     return (
@@ -35,8 +47,8 @@ const About = (props) => {
                                 </div>
                             </div>
                         </div>
-                        <div className='aboutRight'>
-                            <ul>
+                        <div className='aboutRight' ref={myRocet}>
+                            <ul ref={myRef} className='ulRight ' >
                                 <ListSkills />
                             </ul>
                         </div>

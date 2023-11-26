@@ -30,7 +30,10 @@ const HomeSection = (props) => {
                                     </span>
                                 </h1>
                                 <h2>
-                                    <span>-</span> I'm a Web Developer
+                                    <span>-</span> I'm a Web Developer and this is my first project․
+                                </h2>
+                                <h2>
+                                    <span>-</span>I used JavaScript library ReactJs
                                 </h2>
                                 <p>
                                     The goal isn't to build a website. The goal is to build

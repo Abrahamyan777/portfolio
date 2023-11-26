@@ -1,8 +1,26 @@
+import { useInView } from 'react-intersection-observer';
 import Container from '../components/container/container';
 import './achtivity.scss'
+import { useEffect, useRef } from 'react';
 
 
 const Achtivity = (props) => {
+
+    const {ref: myRocet, inView: ElIsVisible} = useInView({threshold: 1})
+    const {ref: myRocetEx, inView: ElIsVisibleEx} = useInView({threshold: 1})
+
+    const firstRefEd = useRef()
+    const secondRefEx = useRef()
+
+
+    useEffect(() => {
+        if(ElIsVisible){
+            firstRefEd.current.classList.add("animation")
+        }
+        if(ElIsVisibleEx){
+            secondRefEx.current.classList.add("animationEx")
+        }
+    }, [ElIsVisible, ElIsVisibleEx])
 
 
     return (
@@ -11,9 +29,9 @@ const Achtivity = (props) => {
                 <div className='achtiveInner'>
                     <h3>My <span>Achievements</span></h3>
                     <div className='main'>
-                        <div className='education'>
+                        <div className='education' ref={myRocet}>
                             <h4 className='title'>Education</h4>
-                            <ul>
+                            <ul ref={firstRefEd}>
                                 <li>
                                     <div className='timeLine-info'>
                                         <span>2016 - 2020</span>
@@ -60,9 +78,9 @@ const Achtivity = (props) => {
                                 </li>
                             </ul>
                         </div>
-                        <div className='experiense'>
+                        <div className='experiense' ref={myRocetEx}>
                             <h4 className='title'>Experiense</h4>
-                            <ul>
+                            <ul ref={secondRefEx}>
                                 <li>
                                     <div className='timeLine-info'>
                                         <span>2019 - 2021</span>
