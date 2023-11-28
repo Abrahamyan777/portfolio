@@ -63,16 +63,13 @@ const PortfolioItems = (props) => {
 
 const Portfolio = (props) => {
 
-
     const itemsRef = useRef()
 
     const { ref: myRocet, inView: ElIsVisible } = useInView({ threshold: 0.3 })
-    console.log(ElIsVisible);
 
     useEffect(() => {
         if (ElIsVisible) {
            itemsRef.current.classList.add("animationPort")
-
         }
 
     }, [ElIsVisible])

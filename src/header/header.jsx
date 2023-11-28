@@ -67,7 +67,15 @@ const Header = (props) => {
                         </div>
                     }
                     {
-                        open && <Modal open={open} setOpen={setOpen} />
+                        open && <Modal
+                        homeRef={props.homeRef}
+                        aboutRef={props.aboutRef}
+                        experienseRef={props.experienseRef}
+                        contactRef={props.contactRef}
+                        portfolioRef={props.portfolioRef}
+                        newsRef={props.newsRef}
+                        open={open}
+                        setOpen={setOpen} />
                     }
                 </div>
             </Container>
