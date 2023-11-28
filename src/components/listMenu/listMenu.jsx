@@ -7,10 +7,7 @@ const MenuList = (props) => {
     const list = ['Home', 'About', 'Experience', 'Portfolio','News', 'Contact Us'];
 
     const hendleClick = (index, el) => {
-        if (props.open && props.setOpen) {
-            props.setOpen(!props.open)
-        }
-        
+       
         if(el === 'Home'){
             props.homeRef.current?.scrollIntoView({ behavior: 'smooth' });
         }else if(el === 'About'){
@@ -29,7 +26,6 @@ const MenuList = (props) => {
             props.newsRef.current?.scrollIntoView({ behavior: 'smooth'});
         }
     }
-    
 
     return (
         list.map((el, index) => (

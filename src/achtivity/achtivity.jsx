@@ -6,8 +6,8 @@ import { useEffect, useRef } from 'react';
 
 const Achtivity = (props) => {
 
-    const {ref: myRocet, inView: ElIsVisible} = useInView({threshold: 1})
-    const {ref: myRocetEx, inView: ElIsVisibleEx} = useInView({threshold: 1})
+    const {ref: myRocet, inView: ElIsVisible} = useInView({threshold: 0.3})
+    const {ref: myRocetEx, inView: ElIsVisibleEx} = useInView({threshold: 0.3})
 
     const firstRefEd = useRef()
     const secondRefEx = useRef()

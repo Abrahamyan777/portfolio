@@ -2,12 +2,23 @@ import './homeSection.scss';
 import img from './../images/imag.jpeg'
 import { NavLink } from 'react-router-dom';
 import Container from '../components/container/container';
+import cv from '../files/Grigor_Abrahamyan_CV.pdf'
 
 const HomeSection = (props) => {
     const hendleClick = (moreInfo) => {
         if (moreInfo === "Experience") {
             props.experienseRef.current?.scrollIntoView({ behavior: 'smooth' });
         }
+    }
+
+    const onButtonClick = (cv) => {
+        const pdfUrl = cv;
+        const link = document.createElement("a");
+        link.href = pdfUrl;
+        link.download = cv; 
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
     }
 
     return (
@@ -41,7 +52,7 @@ const HomeSection = (props) => {
                                     and development.
                                 </p>
                                 <div className='tooBtn'>
-                                    <NavLink className='ms-btn'>Download CV</NavLink>
+                                    <NavLink className='ms-btn'   onClick={() => onButtonClick(cv)} >Download CV</NavLink>
                                     <NavLink onClick={() => hendleClick("Experience")}>More Info</NavLink>
                                 </div>
                             </div>
