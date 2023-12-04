@@ -6,18 +6,18 @@ import { useEffect, useRef } from 'react';
 
 const Achtivity = (props) => {
 
-    const {ref: myRocet, inView: ElIsVisible} = useInView({threshold: 0.3})
-    const {ref: myRocetEx, inView: ElIsVisibleEx} = useInView({threshold: 0.3})
+    const { ref: myRocet, inView: ElIsVisible } = useInView({ threshold: 0.3 })
+    const { ref: myRocetEx, inView: ElIsVisibleEx } = useInView({ threshold: 0.3 })
 
     const firstRefEd = useRef()
     const secondRefEx = useRef()
 
 
     useEffect(() => {
-        if(ElIsVisible){
+        if (ElIsVisible) {
             firstRefEd.current.classList.add("animation")
         }
-        if(ElIsVisibleEx){
+        if (ElIsVisibleEx) {
             secondRefEx.current.classList.add("animationEx")
         }
     }, [ElIsVisible, ElIsVisibleEx])
@@ -114,8 +114,10 @@ const Achtivity = (props) => {
                                         <span> 2022 - 2023</span>
                                     </div>
                                     <div className='timeLine-content'>
-                                        <h5>Freelancer
-                                        </h5>
+                                        <h5> IT Specialist Automation of business </h5>
+                                        <p>
+                                            EKey LLC
+                                        </p>
                                     </div>
                                     <div className='timeLine-marker'></div>
                                 </li>
