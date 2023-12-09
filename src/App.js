@@ -12,6 +12,7 @@ import Service from './service/service';
 import Portfolio from './portfolio/portfolio';
 import News from './news/news';
 import Insta from './insta/insta';
+import CircleComp from './components/circle/circle';
 
 
 function App() {
@@ -29,6 +30,21 @@ function App() {
   const contactRef = useRef();
   const portfolioRef = useRef();
   const newsRef = useRef();
+  const topRef = useRef()
+
+
+
+  const [fix1, setFix1] = useState(false);
+
+  function fixed1() {
+    if (window.scrollY > 150) {
+      setFix1(true)
+    }
+    else {
+      setFix1(false)
+    }
+  }
+  window.addEventListener('scroll', fixed1);
 
   return (
     <div className="App">
@@ -36,6 +52,7 @@ function App() {
         !isLoading ? <LoaderSpinner />
           :
           <>
+            <CircleComp fix1={fix1} setFix1={setFix1} topRef={topRef}/>
             <Header
               homeRef={homeRef}
               aboutRef={aboutRef}
@@ -45,6 +62,7 @@ function App() {
               newsRef={newsRef}
             />
             <HomeSection
+              topRef={topRef}
               homeRef={homeRef}
               experienseRef={experienseRef}
             />

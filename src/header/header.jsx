@@ -8,6 +8,9 @@ import MenuList from '../components/listMenu/listMenu';
 import Container from '../components/container/container';
 
 
+
+
+
 const Header = (props) => {
     const [screenWidth, setScreenWidth] = useState(window.innerWidth);
     const [open, setOpen] = useState(false)
@@ -15,7 +18,7 @@ const Header = (props) => {
     const [fix, setFix] = useState(false);
 
     function fixed() {
-        if (window.scrollY > 50) {
+        if (window.scrollY > 150) {
             setFix(true)
         }
         else {
@@ -39,7 +42,9 @@ const Header = (props) => {
     return (
         <header className={fix ? "header-wrapper-fix header-wrapper" : ' header-wrapper'} >
             <Container>
+
                 <div className="header-inner">
+                   
                     <div className='maser-logo'>
                         <NavLink to='/'>
                             <img src={logo} alt='logo' />
