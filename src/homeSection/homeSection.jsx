@@ -24,7 +24,7 @@ const HomeSection = (props) => {
     return (
         <div className="homeSection home-ms" ref={props.homeRef}>
             <Container>
-                <div className='homeSectionInner'>
+                <div className='homeSectionInner' ref={props.topRef}>
                     <div className='info-section'>
                         <div className='info-left'>
                             <div className='portfolio-img'>

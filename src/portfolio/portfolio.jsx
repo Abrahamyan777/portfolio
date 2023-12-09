@@ -17,7 +17,7 @@ const PortfolioItems = (props) => {
         },
         {
             id: 2,
-            img: "https://maraviyainfotech.com/projects/masterly/demo-2/assets/img/portfolio/22.jpg",
+            img: "https://maraviyainfotech.com/projects/masterly/demo-2/assets/img/portfolio/55.jpg" ,
             title1: "Web Design"
         },
         {
