@@ -3,6 +3,7 @@ import Container from "../components/container/container";
 import "./portfolio.scss"
 import { useEffect, useRef } from "react";
 import boximg from "../images/box.png"
+import binance from '../images/binance.png'
 import { NavLink } from "react-router-dom";
 
 
@@ -11,14 +12,15 @@ const PortfolioItems = (props) => {
     const Items = [
         {
             id: 1,
-            img: boximg,
-            title1: "3D Graphics",
-            title2: "Templates",
+            img: binance,
+            title1: " Web Design",
+            
         },
         {
             id: 2,
-            img: "https://maraviyainfotech.com/projects/masterly/demo-2/assets/img/portfolio/55.jpg" ,
-            title1: "Web Design"
+            img: boximg ,
+            title1: "Web Design",
+            title2: "Templates",
         },
         {
             id: 3,
@@ -49,8 +51,8 @@ const PortfolioItems = (props) => {
         Items.map(({ img, title1, title2, id }, index) => (
             <div className="ItemWrapper ItemGrid" key={index}  >
                 <NavLink to={
-                    id ===1 &&'https://abrahamyan777.github.io/' ||
-                    id ===2 && "https://google.com"
+                    id ===1 &&'https://abrahamyan777.github.io/binance/' ||
+                    id ===2 && "https://abrahamyan777.github.io/"
                             }
              target="blank">
                     <div className="ItemsInner" >
