@@ -1,8 +1,9 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.f986c36f.css",
-    "main.js": "/portfolio/static/js/main.ef294937.js",
+    "main.js": "/portfolio/static/js/main.1ea4963f.js",
     "static/js/787.128fc6e9.chunk.js": "/portfolio/static/js/787.128fc6e9.chunk.js",
+    "static/media/binance.png": "/portfolio/static/media/binance.dfadcaab40f487d78dfe.png",
     "static/media/box.png": "/portfolio/static/media/box.04e3ae4c86a9eafb3a5c.png",
     "static/media/home_bg.jpg": "/portfolio/static/media/home_bg.ab1f536da2c1a29f81db.jpg",
     "static/media/Grigor_Abrahamyan_CV.pdf": "/portfolio/static/media/Grigor_Abrahamyan_CV.38165cdc806a3abafa1e.pdf",
@@ -10,11 +11,11 @@
     "static/media/instart.webp": "/portfolio/static/media/instart.d6b1ffdc42ec92d5f1f8.webp",
     "index.html": "/portfolio/index.html",
     "main.f986c36f.css.map": "/portfolio/static/css/main.f986c36f.css.map",
-    "main.ef294937.js.map": "/portfolio/static/js/main.ef294937.js.map",
+    "main.1ea4963f.js.map": "/portfolio/static/js/main.1ea4963f.js.map",
     "787.128fc6e9.chunk.js.map": "/portfolio/static/js/787.128fc6e9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f986c36f.css",
-    "static/js/main.ef294937.js"
+    "static/js/main.1ea4963f.js"
   ]
 }
