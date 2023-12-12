@@ -2,7 +2,7 @@ import { useInView } from "react-intersection-observer";
 import Container from "../components/container/container";
 import "./portfolio.scss"
 import { useEffect, useRef } from "react";
-import boximg from "../images/box.png"
+import labhorgini from "../images/labhorgini.png"
 import binance from '../images/binance.png'
 import { NavLink } from "react-router-dom";
 
@@ -18,7 +18,7 @@ const PortfolioItems = (props) => {
         },
         {
             id: 2,
-            img: boximg ,
+            img: labhorgini ,
             title1: "Web Design",
             title2: "Templates",
         },
