@@ -14,12 +14,8 @@ const SocialMedia = () => {
             icon: < BiLogoLinkedin />
         },
         {
-            link: 'https://github.com/Goq-96',
+            link: 'https://github.com/Abrahamyan777',
             icon: < BiLogoGithub /> 
-        },
-        {
-            link: 'https://web.telegram.org/a/',
-            icon: < BiLogoTelegram />
         },
     ]
     return (

@@ -4,7 +4,7 @@ import './listMenu.scss'
 
 const MenuList = (props) => {
 
-    const list = ['Home', 'About', 'Experience', 'Portfolio','News', 'Contact Us'];
+    const list = ['Home', 'About', 'Experience', 'Portfolio', 'Contact Us'];
 
     const hendleClick = (index, el) => {
        

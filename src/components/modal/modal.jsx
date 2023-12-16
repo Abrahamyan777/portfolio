@@ -5,7 +5,7 @@ import MenuList from '../listMenu/listMenu';
 
 
 const Modal = (props) => {
-    const list1 = ['Home', 'About', 'Experience', 'Portfolio', 'News', 'Contact Us'];
+    const list1 = ['Home', 'About', 'Experience', 'Portfolio', 'Contact Us'];
 
     const hendleClick1 = (index, el) => {
        

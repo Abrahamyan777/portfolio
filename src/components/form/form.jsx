@@ -4,9 +4,9 @@ import { useInView } from 'react-intersection-observer';
 import { useEffect, useRef } from 'react';
 
 
-const ContactForm = () => {
+const ContactForm = ({ active, setActive }) => {
 
-    const { register, handleSubmit, formState: { errors, isValid }, reset } = useForm({ mode: 'onBlur' })
+    const { register, handleSubmit, formState: { errors, isValid, isDirty }, reset } = useForm({ mode: 'onBlur' })
 
     const sendInfo = (data) => {
         console.log(JSON.stringify(data));
@@ -78,7 +78,11 @@ const ContactForm = () => {
                 </div>
 
                 <div>
-                    <button>Submit</button>
+                    <button disabled={!isValid}
+                    onClick={() => {
+                        setActive(true)
+                        sendInfo()
+                    }} >Submit</button>
                 </div>
             </div>
         </form>

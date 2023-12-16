@@ -5,10 +5,10 @@ import Container from "../components/container/container";
 
 
 
-const Contact = (props) => {
+const Contact = ({ active, setActive , contactRef}) => {
 
     return (
-        <div className="contactContainer" ref={props.contactRef}>
+        <div className="contactContainer" ref={contactRef}>
             <Container>
                 <div className="contactInner">
                     <h2 className="title">Get in
@@ -19,7 +19,9 @@ const Contact = (props) => {
                             <GoogleMapComponent />
                         </div>
                         <div className="contactForm">
-                            <ContactForm />
+                            <ContactForm 
+                             active={active} setActive={setActive}
+                             />
                         </div>
                     </div>
                 </div>
