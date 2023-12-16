@@ -13,6 +13,7 @@ import Portfolio from './portfolio/portfolio';
 import News from './news/news';
 import Insta from './insta/insta';
 import CircleComp from './components/circle/circle';
+import SuccessModal from './components/form/successModal/successModal';
 
 
 function App() {
@@ -46,12 +47,15 @@ function App() {
   }
   window.addEventListener('scroll', fixed1);
 
+  const [modalActive, setModalActiv] = useState(false);
+
   return (
     <div className="App">
       {
         !isLoading ? <LoaderSpinner />
           :
           <>
+          <SuccessModal active={modalActive} setActive={setModalActiv}/>
             <CircleComp fix1={fix1} setFix1={setFix1} topRef={topRef}/>
             <Header
               homeRef={homeRef}
@@ -77,11 +81,10 @@ function App() {
             <Portfolio
               portfolioRef={portfolioRef}
             />
-            <News
-              newsRef={newsRef}
-            />
+            {/* <News newsRef={newsRef} /> */}
             <Contact
               contactRef={contactRef}
+              active={modalActive} setActive={setModalActiv}
             />
             <Insta />
             <Footer />
