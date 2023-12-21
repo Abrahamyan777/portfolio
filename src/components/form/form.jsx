@@ -81,7 +81,6 @@ const ContactForm = ({ active, setActive }) => {
                     <button disabled={!isValid}
                     onClick={() => {
                         setActive(true)
-                        sendInfo()
                     }} >Submit</button>
                 </div>
             </div>
