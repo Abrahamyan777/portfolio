@@ -77,7 +77,7 @@ function App() {
             <Achtivity
               experienseRef={experienseRef}
             />
-            <Project />
+            {/* <Project /> */}
             <Portfolio
               portfolioRef={portfolioRef}
             />
