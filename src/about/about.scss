@@ -10,9 +10,17 @@
 @mixin height($h) {
     height: $h;
 }
+:root {
+    --color-1: #fff;
+    --color-2: #aaa;
+    --color-3: #777;
+    --backgroun-1: #111;
+    --backgroun-2: #555;
+  }
 
 .aboutConteiner {
     background-color: #17181c;
+    // background: linear-gradient(180deg, var(--backgroun-1), var(--backgroun-2));
     display: flex;
     align-items: center;
     padding: 60px 0;

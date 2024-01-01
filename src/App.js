@@ -14,6 +14,7 @@ import News from './news/news';
 import Insta from './insta/insta';
 import CircleComp from './components/circle/circle';
 import SuccessModal from './components/form/successModal/successModal';
+import BackgroundParticles from './components/particles/backgroundParticles';
 
 
 function App() {
@@ -55,6 +56,7 @@ function App() {
         !isLoading ? <LoaderSpinner />
           :
           <>
+          <BackgroundParticles />
           <SuccessModal active={modalActive} setActive={setModalActiv}/>
             <CircleComp fix1={fix1} setFix1={setFix1} topRef={topRef}/>
             <Header

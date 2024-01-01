@@ -11,8 +11,8 @@ const About = (props) => {
     const { ref: myRocet, inView: ElIsVisible } = useInView({ threshold: 0.5 })
     const myRef = useRef()
 
-    useEffect(()=> {
-        if(ElIsVisible){
+    useEffect(() => {
+        if (ElIsVisible) {
             myRef.current.classList.add("animation")
         }
 

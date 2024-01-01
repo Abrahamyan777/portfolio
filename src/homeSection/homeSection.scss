@@ -48,6 +48,8 @@
     background-color: rgba(0, 0, 0, 0.7);
     @include flex();
     animation: bg_move 30s infinite;
+    position: relative;
+    z-index: 3;
 
     &::after {
         content: "";
