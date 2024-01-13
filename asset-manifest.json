@@ -1,21 +1,22 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.b7aa93ac.css",
-    "main.js": "/portfolio/static/js/main.2fe083aa.js",
+    "main.js": "/portfolio/static/js/main.c4efd069.js",
     "static/js/787.128fc6e9.chunk.js": "/portfolio/static/js/787.128fc6e9.chunk.js",
     "static/media/binance.png": "/portfolio/static/media/binance.dfadcaab40f487d78dfe.png",
     "static/media/labhorgini.png": "/portfolio/static/media/labhorgini.0511da7bd147683a81b7.png",
     "static/media/home_bg.jpg": "/portfolio/static/media/home_bg.ab1f536da2c1a29f81db.jpg",
     "static/media/grid.png": "/portfolio/static/media/grid.66332781258aa6dbdedd.png",
+    "static/media/crypto.png": "/portfolio/static/media/crypto.a837ef1be558d0420a95.png",
     "static/media/Grigor_Abrahamyan_CV.pdf": "/portfolio/static/media/Grigor_Abrahamyan_CV.38165cdc806a3abafa1e.pdf",
     "static/media/instart.webp": "/portfolio/static/media/instart.d6b1ffdc42ec92d5f1f8.webp",
     "index.html": "/portfolio/index.html",
     "main.b7aa93ac.css.map": "/portfolio/static/css/main.b7aa93ac.css.map",
-    "main.2fe083aa.js.map": "/portfolio/static/js/main.2fe083aa.js.map",
+    "main.c4efd069.js.map": "/portfolio/static/js/main.c4efd069.js.map",
     "787.128fc6e9.chunk.js.map": "/portfolio/static/js/787.128fc6e9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.b7aa93ac.css",
-    "static/js/main.2fe083aa.js"
+    "static/js/main.c4efd069.js"
   ]
 }
