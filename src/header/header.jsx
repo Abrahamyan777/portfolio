@@ -47,7 +47,7 @@ const Header = (props) => {
                    
                     <div className='maser-logo'>
                         <NavLink to='/'>
-                            <img src={logo} alt='logo' />
+                           <h2 className='crative' data-text="Creative...">Creative...</h2>
                         </NavLink>
                     </div>
                     {(screenWidth > 992) ? (

@@ -1,4 +1,5 @@
 $height_100: 100%;
+$height_80: 80%;
 
 @mixin whidth_height ($w , $h) {
     width: $w;
@@ -23,14 +24,49 @@ $height_100: 100%;
     transition: 0.8s ease-out;
 
     .header-inner {
+        margin-top: 0.5%;
         display: flex;
         justify-content: space-between;
         align-items: center;
+        position: relative;
+        height: 80%;
+        // background-color: #17181c;
 
         .maser-logo {
             height: $height_100;
+            position: absolute;
+            @include flex();
+
 
             a {
+                text-decoration: none;
+
+                .crative {
+                    -webkit-text-fill-color: transparent;
+                    font-size: 40px;
+                    font-weight: bold;
+                    color: #17181c;
+                    // -webkit-text-stroke: 0.5px rgb(15, 131, 0);
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    // text-transform: uppercase; rgb(15, 131, 0)
+                    &::before{
+                        content: attr(data-text);
+                        position: absolute;
+                        left: 0;
+                        top: 0;
+                        color: #677993;
+                        -webkit-text-fill-color: #677993;
+                        border-right: 2px solid #677993;
+                        overflow: hidden;
+                        width: 0%;
+                        animation: animeit 8s linear infinite;
+                    }
+
+
+                }
+
                 img {
                     width: 250px;
                     height: 50px;
@@ -41,6 +77,8 @@ $height_100: 100%;
         .menu-list {
             height: $height_100;
             @include flex;
+            position: absolute;
+            right: 0;
 
             ul {
                 list-style: none;
@@ -108,5 +146,17 @@ $height_100: 100%;
 
     .header-wrapper .header-inner .maser-logo a img {
         width: 180px;
+    }
+}
+
+@keyframes animeit{
+    0%{
+        width: 0%;
+    }
+    70%{
+        width: 100%;
+    }
+    80%{
+        width: 100%;
     }
 }
