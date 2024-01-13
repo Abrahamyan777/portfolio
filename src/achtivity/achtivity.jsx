@@ -98,25 +98,24 @@ const Achtivity = (props) => {
                                 </li>
                                 <li>
                                     <div className='timeLine-info'>
-                                        <span>June 15, 2021 - 2022</span>
+                                        <span>June 15,  2022 - 2023</span>
                                     </div>
                                     <div className='timeLine-content'>
-                                        <h5>Marketing Communications
-                                        </h5>
+                                        <h5>IT Specialist Automation of business </h5>
                                         <p>
-                                            " YPorject " COMPANY <br></br>
+                                            EKey LLC <br></br>
                                         </p>
                                     </div>
                                     <div className='timeLine-marker'></div>
                                 </li>
                                 <li>
                                     <div className='timeLine-info'>
-                                        <span> 2022 - 2023</span>
+                                        <span>  2024 </span>
                                     </div>
                                     <div className='timeLine-content'>
-                                        <h5> IT Specialist Automation of business </h5>
+                                        <h5> IT Software developer </h5>
                                         <p>
-                                            EKey LLC
+                                            INGO ARMENIA
                                         </p>
                                     </div>
                                     <div className='timeLine-marker'></div>

@@ -5,6 +5,7 @@ import { useEffect, useRef } from "react";
 import labhorgini from "../images/labhorgini.png"
 import binance from '../images/binance.png';
 import  grid from '../images/grid.png'
+import  crypto from '../images/crypto.png'
 import { NavLink } from "react-router-dom";
 
 
@@ -29,6 +30,12 @@ const PortfolioItems = (props) => {
             title1: "Web Design",
             title2: "Templates",
         },
+        {
+            id: 4,
+            img: crypto ,
+            title1: "Web Design",
+            title2: "Templates",
+        },
 
     ]
     return (
@@ -38,7 +45,8 @@ const PortfolioItems = (props) => {
                 <NavLink to={
                     id ===1 &&'https://abrahamyan777.github.io/grid/' ||
                     id ===2 &&'https://abrahamyan777.github.io/binance/' ||
-                    id ===3 && "https://abrahamyan777.github.io/"
+                    id ===3 && "https://abrahamyan777.github.io/" ||
+                    id ===4 && "https://abrahamyan777.github.io/crypto/"
                             }
              target="blank">
                     <div className="ItemsInner" >
