@@ -1,8 +1,11 @@
+import { useTranslation } from 'react-i18next';
 import './successModal.scss'
 import { FaCheck } from "react-icons/fa";
 
 
 const SuccessModal = ({ active, setActive }) => {
+
+    const {t} = useTranslation()
 
     return (
         <div className={active ? 'modal active' : 'modal'} onClick={() => setActive(false)}>
@@ -10,9 +13,10 @@ const SuccessModal = ({ active, setActive }) => {
                 <div className='circle'>
                     <FaCheck />
                 </div>
-                <h2>Success!</h2>
+                <h2 className='titleSuccess'>{t("SuccessModal.Success!")}</h2>
                 <p>
-                Your booking has been confirmed.
+                {t("SuccessModal.Your booking has been confirmed.")}
+                
                 </p>
                 <button onClick={() => setActive(false)}>Ok</button>
 

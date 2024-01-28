@@ -1,0 +1,81 @@
+{
+    "MenuList":  {
+        "Home": "Հիմնական էջ",
+        "About": "Իմ մասին",
+        "Experience": "Փորձ",
+        "Portfolio": "Պորտֆոլիո",
+        "Contact Us": "Կապ",
+        "Menu": "Մենյու"
+    },
+    "HomeSectio": {
+        "I'm": "Ես",
+        "Grigor": "Գրիգորն եմ",
+        "text1": "Ես վեբ ծրագրավորող եմ և սա իմ առաջին նախագիծն է։",
+        "text2": "Ես օգտագործել եմ ReactJs JavaScript գրադարանը:",
+        "text3": " Նպատակը կայք ստեղծելը չէ։ Նպատակը բիզնես կառուցելն է։ Կրեատիվ, ճկուն և մատչելի կայքերի ձևավորում և մշակում։",
+        "Download CV": "Ներբեռնեք ռեզյումեն",
+        "More Info": "Լրացուցիչ տեղեկություններ"
+    },
+    "about": {
+        "About": "Իմ",
+        "Me": "մասին",
+        "About myself": "Իմ մասին",
+        "text1": "Ես նպատակասլաց և աշխատասեր մարդ եմ, պատրաստ նոր մարտահրավերների։ Ծրագրավորումն իմ երկրորդ մասնագիտությունն է։ Ես հավատում եմ, որ թիմային համագործակցությունն ու քրտնաջան աշխատանքը կբերեն հաջողության: Ես փնտրում եմ հետաքրքիր դիրք ապահովել մի ընկերությունում, որը կընդլայնի իմ ուսումը և կբարձրացնի իմ հմտությունները:"
+    },
+    "ListTitle": {
+        "Full Name": "Ամբողջական անուն",
+        "Grigor Abrahamyan": "Գրիգոր Աբրահամյան",
+        "Age": "Տարիք",
+        "27 Years": "27 տարի",
+        "Phone No": "Հեռախոսահամար",
+        "Email": "Էլ հասցե",
+        "Address": "Հասցե",
+        "Yerevan Armenia": "Երևան, Հայաստան"
+    },
+    "SuccessModal" : {
+        "Success!" : "Հաջողություն",
+        "Your booking has been confirmed." : "Ձեր ամրագրումը հաստատվել է:"
+    },
+    "Service" : {
+        "Graphics Design": "Գրաֆիկական դիզայն",
+        "Develop the Visual Identity of Your Business": "Զարգացրեք ձեր բիզնեսի տեսողական ինքնությունը",
+        "Web Design": "Վեբ դիզայն",
+        "Connect With Your Users, Not Just Your Business.": "Կապվեք ձեր օգտատերերի հետ, ոչ միայն ձեր բիզնեսի հետ.",
+        "Development": "Զարգացում",
+        "We Develop the Visual Identity of Your Business.": "Մենք զարգացնում ենք ձեր բիզնեսի տեսողական ինքնությունը:",
+        "Seo Friendly": "Seo",
+        "Taking your site at the top of Google's ranking.": "Բարձրացնել ձեր կայքը Google-ի վարկանիշի վերևում"
+    },
+    "Achtivity": {
+        "My": "Իմ",
+        "Achievements": "Ձեռքբերումներ",
+        "Education": "Կրթություն",
+        "Yerevan State University": "Երևանի պետական համալսարանт",
+        "YSU": "ԵՊՀ",
+        "Faculty of Mathematics and Mechanics": "Մաթեմատիկայի և մեխանիկայի ֆակուլտետ",
+        "Mathematics": "Մաթեմատիկա",
+        "Programming trainings": "Ծրագրավորման ուսուցում",
+        "Software Development Companies": "Ծրագրային ապահովման ընկերություններ",
+        "Software Development": "Ծրագրային ապահովման մշակում",
+        "Experiense": "Փորձ",
+        "Advertising and Marketing Communications": "Գովազդային և մարքեթինգային հաղորդակցություն",
+        "COMPANY": "ԸՆԿԵՐՈՒԹՅՈՒՆ",
+        "June": "հունիս",
+        "IT Specialist Automation of business": "ՏՏ մասնագետ Բիզնեսի ավտոմատացում",
+        "IT Software developer": "ՏՏ ծրագրերի մշակող"
+    },
+    "Project" : {
+        "Projects": "Նախագծեր",
+        "Clients": "Հաճախորդներ",
+        "Countries": "Երկրներ",
+        "Awords": "Ձեւակերպվածներ"
+    },
+    "Portfolio" : {
+        "My": "Իմ",
+        "Portfolio": "Պորտֆոլիոն"
+    },
+    "Contact": {
+        "Get in": "Կապվեք",
+        "Touch": ""
+    }
+}

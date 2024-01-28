@@ -7,6 +7,7 @@ import binance from '../images/binance.png';
 import  grid from '../images/grid.png'
 import  crypto from '../images/crypto.png'
 import { NavLink } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 
 const PortfolioItems = (props) => {
@@ -82,6 +83,8 @@ const Portfolio = (props) => {
 
     }, [ElIsVisible])
 
+    const {t} = useTranslation()
+
 
 
 
@@ -89,27 +92,7 @@ const Portfolio = (props) => {
         <div className="portfolioContainer" ref={props.portfolioRef}>
             <Container>
                 <div className="portfolioInner" ref={myRocet}>
-                    <h2>My  <span>Portfolio</span></h2>
-                    {/* <div className="portfolio-filter">
-                        <ul>
-                            <li>
-                                ALL
-                            </li>
-                            <li>
-                                DESIGN
-                            </li>
-                            <li>
-                                DEVELOPMENT
-                            </li>
-                            <li>
-                                GRAPHICS
-                            </li>
-                            <li>
-                                Templates
-                            </li>
-                        </ul>
-                    </div> */}
-
+                    <h2>{t("Portfolio.My")}  <span>{t("Portfolio.Portfolio")} </span></h2>
                     <div className="portfolioGrid" ref={itemsRef}>
                         <PortfolioItems />
                     </div>

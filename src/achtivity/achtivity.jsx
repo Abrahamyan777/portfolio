@@ -2,6 +2,7 @@ import { useInView } from 'react-intersection-observer';
 import Container from '../components/container/container';
 import './achtivity.scss'
 import { useEffect, useRef } from 'react';
+import { useTranslation } from 'react-i18next';
 
 
 const Achtivity = (props) => {
@@ -22,28 +23,29 @@ const Achtivity = (props) => {
         }
     }, [ElIsVisible, ElIsVisibleEx])
 
+    const {t} = useTranslation()
 
     return (
         <div className='achtiveContainer' ref={props.experienseRef}>
             <Container>
                 <div className='achtiveInner'>
-                    <h3>My <span>Achievements</span></h3>
+                    <h3>{t("Achtivity.My")} <span>{t("Achtivity.Achievements")}</span></h3>
                     <div className='main'>
                         <div className='education' ref={myRocet}>
-                            <h4 className='title'>Education</h4>
+                            <h4 className='title'>{t("Achtivity.Education")}</h4>
                             <ul ref={firstRefEd}>
                                 <li>
                                     <div className='timeLine-info'>
                                         <span>2016 - 2020</span>
                                     </div>
                                     <div className='timeLine-content'>
-                                        <h5>Yerevan State University
-                                            <span>- YSU</span>
+                                        <h5>{t("Achtivity.Yerevan State University")}
+                                            <span>- {t("Achtivity.YSU")}</span>
                                         </h5>
                                         <p>
-                                            Faculty of Mathematics and Mechanics
+                                        {t("Achtivity.Faculty of Mathematics and Mechanics")}
                                             <br></br>
-                                            Profession: Mathematics
+                                            {t("Achtivity.Mathematics")}
                                         </p>
                                     </div>
                                     <div className='timeLine-marker'></div>
@@ -53,7 +55,7 @@ const Achtivity = (props) => {
                                         <span>2021 - 2022</span>
                                     </div>
                                     <div className='timeLine-content'>
-                                        <h5>Programming trainings
+                                        <h5>{t("Achtivity.Programming trainings")}
                                         </h5>
                                         <p>
                                             Python Programming (basics)<br></br>
@@ -68,10 +70,10 @@ const Achtivity = (props) => {
                                     </div>
                                     <div className='timeLine-content'>
                                         <h5>BEEONCODE
-                                            <span>"Software Development Companies"</span>
+                                            <span>"{t("Achtivity.Software Development Companies")}"</span>
                                         </h5>
                                         <p>
-                                            Software Development
+                                        {t("Achtivity.Software Development")}
                                         </p>
                                     </div>
                                     <div className='timeLine-marker'></div>
@@ -79,29 +81,27 @@ const Achtivity = (props) => {
                             </ul>
                         </div>
                         <div className='experiense' ref={myRocetEx}>
-                            <h4 className='title'>Experiense</h4>
+                            <h4 className='title'>{t("Achtivity.Experiense")}</h4>
                             <ul ref={secondRefEx}>
                                 <li>
                                     <div className='timeLine-info'>
                                         <span>2019 - 2021</span>
                                     </div>
                                     <div className='timeLine-content'>
-                                        <h5>Advertising and Marketing Communications
+                                        <h5>{t("Achtivity.Advertising and Marketing Communications")}
                                         </h5>
                                         <p>
-                                            " NRG DESIGN " COMPANY <br></br>
-                                            To create advertising plans and content to reach those demographics
-                                            Design and prepare advertisements as needed
+                                            " NRG DESIGN " {t("Achtivity.COMPANY")}  <br></br>
                                         </p>
                                     </div>
                                     <div className='timeLine-marker'></div>
                                 </li>
                                 <li>
                                     <div className='timeLine-info'>
-                                        <span>June 15,  2022 - 2023</span>
+                                        <span> {t("Achtivity.June")} 15,  2022 - 2023</span>
                                     </div>
                                     <div className='timeLine-content'>
-                                        <h5>IT Specialist Automation of business </h5>
+                                        <h5>{t("Achtivity.IT Specialist Automation of business")}</h5>
                                         <p>
                                             EKey LLC <br></br>
                                         </p>
@@ -113,7 +113,7 @@ const Achtivity = (props) => {
                                         <span>  2024 </span>
                                     </div>
                                     <div className='timeLine-content'>
-                                        <h5> IT Software developer </h5>
+                                        <h5> {t("Achtivity.IT Software developer")} </h5>
                                         <p>
                                             INGO ARMENIA
                                         </p>
