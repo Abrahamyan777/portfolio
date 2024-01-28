@@ -2,9 +2,12 @@ import { useInView } from 'react-intersection-observer';
 import Container from '../components/container/container';
 import './project.scss'
 import { useEffect, useRef } from 'react';
+import { useTranslation } from 'react-i18next';
 
 
 const Project = () => {
+
+    const {t} = useTranslation()
 
     const {ref: myRocket1, inView: ElIsVisible1} = useInView({ threshold: 0.5 });
 
@@ -24,19 +27,19 @@ const Project = () => {
                 <div className='projectInner' ref={myRef1}>
                     <div className='projectElem'>
                         <h3>31<span>+</span></h3>
-                        <p>Projects</p>
+                        <p>{t("Project.Projects")}</p>
                     </div>
                     <div className='projectElem'>
                         <h3>23<span>+</span></h3>
-                        <p>Clients</p>
+                        <p>{t("Project.Clients")}</p>
                     </div>
                     <div className='projectElem'>
                         <h3 className='countre'>5<span>+</span></h3>
-                        <p>Countries</p>
+                        <p>{t("Project.Countries")}</p>
                     </div>
                     <div className='projectElem'>
                         <h3>11<span>+</span></h3>
-                        <p>Awords</p>
+                        <p>{t("Project.Awords")}</p>
                     </div>
                 </div>
             </Container>

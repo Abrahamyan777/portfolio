@@ -2,10 +2,13 @@ import { NavLink } from 'react-router-dom';
 import './modal.scss'
 import { FiX } from "react-icons/fi";
 import MenuList from '../listMenu/listMenu';
+import { useTranslation } from 'react-i18next';
 
 
 const Modal = (props) => {
-    const list1 = ['Home', 'About', 'Experience', 'Portfolio', 'Contact Us'];
+    const { t } = useTranslation();
+
+    const list1 = [t("MenuList.Home"), t("MenuList.About"), t("MenuList.Experience"), t("MenuList.Portfolio"), t("MenuList.Contact Us"),];
 
     const hendleClick1 = (index, el) => {
        
@@ -33,7 +36,7 @@ const Modal = (props) => {
         <aside className='modalWrapper' onClick={() => props.setOpen(!props.open)}>
             <nav className='menu' onClick={(e) => e.stopPropagation()}>
                 <div className='menuTitleDiv'>
-                    <h4 className='menuTitle'>Menu</h4>
+                    <h4 className='menuTitle'>{t("MenuList.Menu")}</h4>
                     <button className='closeIcon' onClick={() => props.setOpen(!props.open)}><FiX /></button>
                 </div>
                 <div className='menuBody'>

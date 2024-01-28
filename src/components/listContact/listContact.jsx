@@ -1,27 +1,31 @@
+import { useTranslation } from "react-i18next"
 
 
 
 const ListTitle = () => {
+
+    const {t} = useTranslation()
+
     const list = [
         {
-            title: 'Full Name',
-            value: "Grigor Abrahamyan"
+            title: t("ListTitle.Full Name"),
+            value: t("ListTitle.Grigor Abrahamyan")
         },
         {
-            title: 'Age',
-            value: "27 Years"
+            title: t("ListTitle.Age"),
+            value: t("ListTitle.27 Years")
         },
         {
-            title: 'Phone No',
+            title: t("ListTitle.Phone No"),
             value: "+374 93 33 43 95"
         },
         {
-            title: 'Email',
+            title: t("ListTitle.Email"),
             value: "abrahamyan051996@gmail.com"
         },
         {
-            title: 'Address',
-            value: "Yerevan Armenia"
+            title: t("ListTitle.Address"),
+            value: t("ListTitle.Yerevan Armenia")
         },
 
     ]

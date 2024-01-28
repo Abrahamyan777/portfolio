@@ -4,30 +4,33 @@ import { AiOutlineAim, AiOutlineAntDesign, AiOutlineDesktop } from "react-icons/
 import Container from '../components/container/container';
 import { useInView } from 'react-intersection-observer';
 import { useEffect, useRef } from 'react';
+import { useTranslation } from 'react-i18next';
 
 
 const Service = () => {
+    
+    const {t} = useTranslation()
 
     const serviceList = [
         {
             logo: <AiOutlineAntDesign />,
-            title: "Graphics Design",
-            text: "Develop the Visual Identity of Your Business"
+            title: t("Service.Graphics Design"),
+            text: t("Service.Develop the Visual Identity of Your Business"),
         },
         {
             logo: <AiOutlineDesktop />,
-            title: "Web Design",
-            text: "Connect With Your Users, Not Just Your Business."
+            title: t("Service.Web Design"),
+            text: t("Service.Connect With Your Users, Not Just Your Business."),
         },
         {
             logo: <BiCodeAlt />,
-            title: "Development",
-            text: "We Develop the Visual Identity of Your Business."
+            title:t("Service.Development"),
+            text: t("Service.We Develop the Visual Identity of Your Business."),
         },
         {
             logo: <AiOutlineAim />,
-            title: "Seo Friendly",
-            text: "Taking your site at the top of Google's ranking."
+            title: t("Service.Seo Friendly"),
+            text: t("Service.Taking your site at the top of Google's ranking."),
         }
     ]
 

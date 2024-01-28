@@ -1,0 +1,81 @@
+{
+    "MenuList":  {
+        "Home": "Дом",
+        "About": "О нас",
+        "Experience": "Опыт",
+        "Portfolio": "Портфолио",
+        "Contact Us": "Связаться с нами",
+        "Menu": "Меню"
+    },
+    "HomeSectio": {
+        "I'm": "Я",
+        "Grigor": "Григор",
+        "text1": "Я веб-разработчик, и это мой первый проект․",
+        "text2": "Я использовал библиотеку JavaScript ReactJs.",
+        "text3": " Цель не в том, чтобы создать сайт. Цель – построить бизнес. Креативный, гибкий и доступный дизайн и разработка веб-сайтов.",
+        "Download CV": "Скачать резюме",
+        "More Info": "Больше информации"
+    },
+    "about": {
+        "About": "Обо",
+        "Me": "мне",
+        "About myself": "О себе",
+        "text1": "Я целеустремленный и трудолюбивый человек, готовый к новым вызовам. Программирование — моя вторая профессия. Я верю, что сотрудничество в команде и упорный труд помогут добиться успеха. Стремлюсь получить интересную должность в компании, которая расширит мое обучение и повысит мои навыки."
+    },
+    "ListTitle": {
+        "Full Name": "Полное имя",
+        "Grigor Abrahamyan": "Григор Абрамян",
+        "Age": "Возраст",
+        "27 Years": "27 лет",
+        "Phone No": "Номер телефона",
+        "Email": "Электронная почта",
+        "Address": "Адрес",
+        "Yerevan Armenia": "Ереван Армения"
+    },
+    "SuccessModal" : {
+        "Success!" : "Удачи",
+        "Your booking has been confirmed." : "Ваше бронирование подтверждено."
+    },
+    "Service" : {
+        "Graphics Design": "Графический дизайн",
+        "Develop the Visual Identity of Your Business": "Разработайте визуальную идентичность вашего бизнеса",
+        "Web Design": "Веб-дизайн",
+        "Connect With Your Users, Not Just Your Business.": "Общайтесь со своими пользователями, а не только со своим бизнесом.",
+        "Development": "Разработка",
+        "We Develop the Visual Identity of Your Business.": "Разрабатываем визуальную индивидуальность вашего бизнеса.",
+        "Seo Friendly": "Seo",
+        "Taking your site at the top of Google's ranking.": "Поднятие вашего сайта на вершину рейтинга Google"
+    },
+    "Achtivity": {
+        "My": "Мой",
+        "Achievements": "Достижения",
+        "Education": "Образование",
+        "Yerevan State University": "Ереванский государственный университет",
+        "YSU": "ЕГУ",
+        "Faculty of Mathematics and Mechanics": "Факультет математики и механики",
+        "Mathematics": "Математика",
+        "Programming trainings": "Тренинги по программированию",
+        "Software Development Companies": "Компании-разработчики программного обеспечения",
+        "Software Development": "Разработка программного обеспечения",
+        "Experiense": "Опыт",
+        "Advertising and Marketing Communications": "Реклама и маркетинговые коммуникации",
+        "COMPANY": "КОМПАНИЯ",
+        "June": "Июнь",
+        "IT Specialist Automation of business": "IT-специалист Автоматизация бизнеса",
+        "IT Software developer": "Разработчик ИТ-программного обеспечения"
+    },
+    "Project" : {
+        "Projects": "Проекты",
+        "Clients": "Клиенты",
+        "Countries": "Страны",
+        "Awords": "сформулированный"
+    },
+    "Portfolio" : {
+        "My": "Мой",
+        "Portfolio": "Портфолио"
+    },
+    "Contact": {
+        "Get in": "Связаться",
+        "Touch": ""
+    }
+}

@@ -1,0 +1,82 @@
+{
+    "MenuList":  {
+        
+        "Home": "Home",
+        "About": "About",
+        "Experience": "Experience",
+        "Portfolio": "Portfolio",
+        "Contact Us": "Contact Us",
+        "Menu": "Menu"
+    },
+    "HomeSectio": {
+        "I'm": "I'm",
+        "Grigor": "Grigor",
+        "text1": "I'm a Web Developer and this is my first project․",
+        "text2": "I used JavaScript library ReactJs",
+        "text3": " The goal isn't to build a website. The goal is to build business. With Creative, flexible and affordable website design and development.",
+        "Download CV": "Download CV",
+        "More Info": "More Info"
+    },
+    "about": {
+        "About": "About",
+        "Me": "Me",
+        "About myself": "About myself",
+        "text1": " I’m a purposeful and hard-working person who is ready for new challenges. Programming is my second profession. I believe that collaboration in a team and hard work can help to achieve success. Eager to obtain a challenging position at a company that will expand my learning and grow up my skills."
+    },
+    "ListTitle": {
+        "Full Name": "Full Name",
+        "Grigor Abrahamyan": "Grigor Abrahamyan",
+        "Age": "Age",
+        "27 Years": "27 Years",
+        "Phone No": "Phone No",
+        "Email": "Email",
+        "Address": "Address",
+        "Yerevan Armenia": "Yerevan Armenia"
+    },
+    "SuccessModal" : {
+        "Success!" : "Success!",
+        "Your booking has been confirmed." : "Your booking has been confirmed."
+    },
+    "Service" : {
+        "Graphics Design": "Graphics Design",
+        "Develop the Visual Identity of Your Business": "Develop the Visual Identity of Your Business",
+        "Web Design": "Web Design",
+        "Connect With Your Users, Not Just Your Business.": "Connect With Your Users, Not Just Your Business.",
+        "Development": "Development",
+        "We Develop the Visual Identity of Your Business.": "We Develop the Visual Identity of Your Business.",
+        "Seo Friendly": "Seo",
+        "Taking your site at the top of Google's ranking.": "Taking your site at the top of Google's ranking."
+    },
+    "Achtivity": {
+        "My": "My",
+        "Achievements": "Achievements",
+        "Education": "Education",
+        "Yerevan State University": "Yerevan State University",
+        "YSU": "YSU",
+        "Faculty of Mathematics and Mechanics": "Faculty of Mathematics and Mechanics",
+        "Mathematics": "Mathematics",
+        "Programming trainings": "Programming trainings",
+        "Software Development Companies": "Software Development Companies",
+        "Software Development": "Software Development",
+        "Experiense": "Experiense",
+        "Advertising and Marketing Communications": "Advertising and Marketing Communications",
+        "COMPANY": "COMPANY",
+        "June": "June",
+        "IT Specialist Automation of business": "IT Specialist Automation of business",
+        "IT Software developer": "IT Software developer"
+    },
+    "Project" : {
+        "Projects": "Projects",
+        "Clients": "Clients",
+        "Countries": "Countries",
+        "Awords": "Awords"
+    },
+    "Portfolio" : {
+        "My": "My",
+        "Portfolio": "Portfolio"
+    },
+    "Contact": {
+        "Get in": "Get in",
+        "Touch": "Touch"
+    }
+}
